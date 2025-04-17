@@ -1,0 +1,127 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About | Astro Site" description="Learn more about this Astro site">
+  <div class="container">
+    <h1>About This Site</h1>
+    
+    <section class="content">
+      <p>
+        This is a demonstration site built with <a href="https://astro.build" target="_blank">Astro</a>, 
+        a modern static site builder that delivers lightning-fast performance.
+      </p>
+      
+      <h2>Why Astro?</h2>
+      <p>
+        Astro allows you to build faster websites with less client-side JavaScript. 
+        It uses a technique called "partial hydration" which means it only sends JavaScript 
+        for interactive components, keeping the rest of your site as static HTML.
+      </p>
+      
+      <h2>Deployment Options</h2>
+      <p>
+        This site is configured to be easily deployed to:
+      </p>
+      
+      <div class="deployment-options">
+        <div class="deployment-option">
+          <h3>GitHub Pages</h3>
+          <p>
+            Perfect for personal projects, documentation sites, and open-source projects.
+            Free hosting directly from your GitHub repository.
+          </p>
+        </div>
+        
+        <div class="deployment-option">
+          <h3>Netlify</h3>
+          <p>
+            Great for professional sites with features like form handling, serverless functions,
+            and continuous deployment from Git.
+          </p>
+        </div>
+      </div>
+      
+      <div class="cta">
+        <a href="/" class="button">Back to Home</a>
+        <a href="/contact" class="button button-outline">Contact</a>
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  .container {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem;
+    color: var(--color-primary);
+  }
+  
+  .content p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .deployment-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .deployment-option {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .deployment-option h3 {
+    margin-top: 0;
+    color: var(--color-primary);
+  }
+  
+  .cta {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s;
+  }
+  
+  .button:hover {
+    background-color: #3b1773;
+    text-decoration: none;
+  }
+  
+  .button-outline {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+  }
+  
+  .button-outline:hover {
+    background-color: rgba(76, 29, 149, 0.1);
+  }
+</style>

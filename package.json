@@ -1,0 +1,21 @@
+{
+  "name": "website_nt",
+  "version": "1.0.0",
+  "description": "My personal website, build with NewTechnology.",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "test": "jest",
+    "deploy:github": "astro build && gh-pages -d dist"
+  },
+  "private": true,
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  },
+  "dependencies": {
+    "astro": "^5.7.3"
+  }
+}
