@@ -3,91 +3,27 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Home | Astro Site">
-  <section class="hero">
-    <h1>Welcome to My Astro Site</h1>
-    <p>A site built with Astro that can be deployed to GitHub Pages</p>
-    <div class="cta-buttons">
-      <a href="/about" class="button">Learn More</a>
-      <a href="/contact" class="button button-outline">Contact</a>
+  <section class="text-center py-16 px-4">
+    <h1 class="text-5xl font-bold mb-4">Welcome to My Astro Site</h1>
+    <p class="text-xl mb-8">A site built with Astro that can be deployed to GitHub Pages</p>
+    <div class="flex gap-4 justify-center">
+      <a href="/about" class="bg-primary hover:bg-primary-dark text-white font-bold py-3 px-6 rounded">Learn More</a>
+      <a href="/contact" class="border-2 border-primary text-white hover:bg-primary/20 font-bold py-3 px-6 rounded">Contact</a>
     </div>
   </section>
 
-  <section class="features">
-    <div class="feature-card">
-      <h2>Fast</h2>
+  <section class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 pb-16">
+    <div class="bg-dark-card p-8 rounded-lg shadow-md">
+      <h2 class="text-2xl font-bold text-primary mb-2">Fast</h2>
       <p>Astro sites are incredibly fast because they ship zero JavaScript by default.</p>
     </div>
-    <div class="feature-card">
-      <h2>Flexible</h2>
+    <div class="bg-dark-card p-8 rounded-lg shadow-md">
+      <h2 class="text-2xl font-bold text-primary mb-2">Flexible</h2>
       <p>Use any UI framework you want (React, Svelte, Vue, etc.), or none at all.</p>
     </div>
-    <div class="feature-card">
-      <h2>Easy to Deploy</h2>
+    <div class="bg-dark-card p-8 rounded-lg shadow-md">
+      <h2 class="text-2xl font-bold text-primary mb-2">Easy to Deploy</h2>
       <p>Deploy to GitHub Pages, Netlify, Vercel, or any other hosting platform with ease.</p>
     </div>
   </section>
 </Layout>
-
-<style>
-  .hero {
-    text-align: center;
-    padding: 4rem 1rem;
-  }
-
-  h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-
-  .cta-buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin-top: 2rem;
-  }
-
-  .button {
-    display: inline-block;
-    background-color: var(--color-primary);
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.2s;
-  }
-
-  .button:hover {
-    background-color: #3b1773;
-    text-decoration: none;
-  }
-
-  .button-outline {
-    background-color: transparent;
-    color: var(--color-primary);
-    border: 2px solid var(--color-primary);
-  }
-
-  .button-outline:hover {
-    background-color: rgba(76, 29, 149, 0.1);
-  }
-
-  .features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    padding: 2rem 1rem 4rem;
-  }
-
-  .feature-card {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .feature-card h2 {
-    margin-top: 0;
-    color: var(--color-primary);
-  }
-</style>
