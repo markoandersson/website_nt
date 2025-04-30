@@ -38,6 +38,14 @@ const keyExpertise = [
   { name: 'Pragmatic Agile Methodologies', details: 'Focus on effective development flow' },
   { name: 'AI in Software Development', details: 'Exploring and utilizing AI tools' }
 ];
+
+// Social media links with icons
+const socialMedia = [
+  { name: 'GitHub', icon: 'github', url: 'https://github.com/yourusername' },
+  { name: 'LinkedIn', icon: 'linkedin', url: 'https://linkedin.com/in/yourusername' },
+  { name: 'Twitter', icon: 'twitter', url: 'https://twitter.com/yourusername' },
+  { name: 'Email', icon: 'envelope', url: 'mailto:your.email@example.com' }
+];
 ---
 
 <Layout title="Marko Andersson - Portfolio">
@@ -74,14 +82,17 @@ const keyExpertise = [
           </div>
         </div>
       </section>
+    </main>
 
-      <section id="technologies" class="py-16 border-t border-b border-gray-700">
-        <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 text-gray-400 text-lg">
-          {technologies.map(tech => (
-              <span class="whitespace-nowrap">{tech}</span>
-          ))}
-        </div>
-      </section>
+    <section id="technologies" class="w-full py-8 border-t border-b border-gray-700">
+      <div class="w-full px-6 flex flex-wrap justify-between items-center text-gray-500 text-lg">
+        {technologies.map(tech => (
+            <span class="whitespace-nowrap">{tech}</span>
+        ))}
+      </div>
+    </section>
+
+    <main class="container mx-auto px-6 py-12">
 
       <section id="about" class="py-20">
         <h2 class="text-3xl font-bold text-center mb-12 text-orange-400">About Me & Expertise</h2>
@@ -150,17 +161,23 @@ const keyExpertise = [
       <section id="contact" class="py-20 text-center border-t border-gray-700">
         <h2 class="text-3xl font-bold text-center mb-6 text-orange-400">Get In Touch</h2>
         <p class="text-lg text-gray-400 mb-8">Interested in collaborating? Send me a message!</p>
-        {/* Add contact form or links (LinkedIn, Email) here later */}
-        <a href="mailto:your.email@example.com" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded transition duration-300">
-          Contact Me
-        </a>
+        <div class="flex justify-center space-x-8 mt-6">
+          {socialMedia.map(social => (
+            <a href={social.url} target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-orange-400 transition duration-300">
+              <span class="sr-only">{social.name}</span>
+              <i class={`${social.icon === 'envelope' ? 'fa-solid' : 'fa-brands'} fa-${social.icon} text-3xl`} aria-hidden="true"></i>
+            </a>
+          ))}
+        </div>
       </section>
 
     </main>
 
     <footer class="bg-gray-800 py-6 mt-12">
-      <div class="container mx-auto px-6 text-center text-gray-500 text-sm">
-        &copy; {new Date().getFullYear()} Marko Andersson. All rights reserved.
+      <div class="container mx-auto px-6 text-center">
+        <div class="text-gray-500 text-sm">
+          &copy; {new Date().getFullYear()} Marko Andersson. All rights reserved.
+        </div>
       </div>
     </footer>
 
