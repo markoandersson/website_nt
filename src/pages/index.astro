@@ -1,29 +1,168 @@
 ---
+// src/pages/index.astro
+// Basic Layout component assumed (adjust path if needed)
 import Layout from '../layouts/Layout.astro';
+
+// Placeholder data (you can replace or fetch this later)
+const technologies = [
+  'Tech 1', 'Tech 2', 'Tech 3', 'Tech 4', 'Tech 5', 'Tech 6', 'Tech 7'
+];
+
+const projects = [
+  {
+    title: 'Project Alpha',
+    dates: '2021 - 2023',
+    company: 'Example Corp',
+    tech: ['Java', 'Spring Boot', 'React', 'PostgreSQL'],
+    description: 'Led the development of a major web application, focusing on backend architecture and migrating legacy components.'
+  },
+  {
+    title: 'System Modernization Beta',
+    dates: '2019 - 2021',
+    company: 'Another Inc.',
+    tech: ['C#', '.NET Core', 'Azure', 'Angular'],
+    description: 'Key developer in a team effort to replace an outdated system with a modern, scalable solution using microservices.'
+  },
+  {
+    title: 'Project Gamma',
+    dates: '2017 - 2019',
+    company: 'Previous Solutions Ltd.',
+    tech: ['Java', 'JavaScript', 'SQL Server'],
+    description: 'Developed and maintained features for a large-scale enterprise application, improving performance and stability.'
+  }
+];
+
+const keyExpertise = [
+  { name: 'Web Application Development', details: 'Java/Spring, C#/.NET Core, JavaScript' },
+  { name: 'Legacy Code Replacement & Modernization', details: 'Strategizing and executing migrations' },
+  { name: 'Pragmatic Agile Methodologies', details: 'Focus on effective development flow' },
+  { name: 'AI in Software Development', details: 'Exploring and utilizing AI tools' }
+];
 ---
 
-<Layout title="Home | Astro Site">
-  <section class="text-center py-16 px-4">
-    <h1 class="text-5xl font-bold mb-4">Welcome to My Astro Site</h1>
-    <p class="text-xl mb-8">A site built with Astro that can be deployed to GitHub Pages</p>
-    <div class="flex gap-4 justify-center">
-      <a href="/about" class="bg-primary hover:bg-primary-dark text-white font-bold py-3 px-6 rounded">Learn More</a>
-      <a href="/contact" class="border-2 border-primary text-white hover:bg-primary/20 font-bold py-3 px-6 rounded">Contact</a>
-    </div>
-  </section>
+<Layout title="Marko Andersson - Portfolio">
+  <div class="bg-gray-900 text-gray-200 min-h-screen font-sans">
 
-  <section class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4 pb-16">
-    <div class="bg-dark-card p-8 rounded-lg shadow-md">
-      <h2 class="text-2xl font-bold text-primary mb-2">Fast</h2>
-      <p>Astro sites are incredibly fast because they ship zero JavaScript by default.</p>
-    </div>
-    <div class="bg-dark-card p-8 rounded-lg shadow-md">
-      <h2 class="text-2xl font-bold text-primary mb-2">Flexible</h2>
-      <p>Use any UI framework you want (React, Svelte, Vue, etc.), or none at all.</p>
-    </div>
-    <div class="bg-dark-card p-8 rounded-lg shadow-md">
-      <h2 class="text-2xl font-bold text-primary mb-2">Easy to Deploy</h2>
-      <p>Deploy to GitHub Pages, Netlify, Vercel, or any other hosting platform with ease.</p>
-    </div>
-  </section>
+    <header class="sticky top-0 z-50 bg-gray-800 shadow-md">
+      <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+        <div class="text-xl font-bold text-orange-500">Marko Andersson</div>
+        <div class="space-x-6">
+          <a href="#home" class="hover:text-orange-400">Home</a>
+          <a href="#about" class="hover:text-orange-400">About</a>
+          <a href="#projects" class="hover:text-orange-400">Projects</a>
+          <a href="#contact" class="hover:text-orange-400">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+      <section id="home" class="flex flex-col md:flex-row items-center justify-between py-20 md:py-32">
+        <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+          <h1 class="text-4xl md:text-5xl font-bold mb-2">Hello.</h1>
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">I'm Marko Andersson</h2>
+          <p class="text-xl md:text-2xl text-orange-400 mb-6">
+            Senior Developer | Legacy Modernization Specialist
+          </p>
+          <p class="text-lg text-gray-400">
+            Passionate about building robust software solutions and modernizing existing systems.
+          </p>
+        </div>
+        <div class="md:w-1/2 flex justify-center">
+          <div class="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-orange-500 to-purple-600 rounded-full flex items-center justify-center overflow-hidden">
+            <span class="text-gray-900 text-lg font-semibold">Image Placeholder</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="technologies" class="py-16 border-t border-b border-gray-700">
+        <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 text-gray-400 text-lg">
+          {technologies.map(tech => (
+              <span class="whitespace-nowrap">{tech}</span>
+          ))}
+        </div>
+      </section>
+
+      <section id="about" class="py-20">
+        <h2 class="text-3xl font-bold text-center mb-12 text-orange-400">About Me & Expertise</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+          <div class="space-y-6">
+            {keyExpertise.map(item => (
+                <div>
+                  {/* Placeholder for potential icon */}
+                  {/* <Icon name="code" class="inline-block w-6 h-6 mr-2 text-orange-400" /> */}
+                  <h3 class="text-xl font-semibold text-orange-400 mb-1">{item.name}</h3>
+                  <p class="text-gray-400">{item.details}</p>
+                </div>
+            ))}
+          </div>
+
+          <div class="space-y-6">
+            <h3 class="text-2xl font-semibold mb-4">My Journey</h3>
+            <p class="text-gray-400 leading-relaxed">
+              {/* Placeholder About Me Text */}
+              With over 17 years in the software industry across four different employers, I've cultivated a deep understanding of the full software development lifecycle. My primary focus lies in [mention something specific, e.g., backend development, full-stack solutions]. I thrive on tackling complex challenges, particularly modernizing legacy systems to improve efficiency and maintainability. I believe in pragmatic agile approaches that streamline development without unnecessary overhead. Exploring how AI can augment the development process is also a key interest of mine.
+              <br/><br/>
+              Let's connect and discuss how I can contribute to your next project.
+            </p>
+            <div class="flex justify-around pt-4 border-t border-gray-700">
+              <div class="text-center">
+                <div class="text-3xl font-bold text-orange-400">17+</div>
+                <div class="text-gray-500">Years Experience</div>
+              </div>
+              <div class="text-center">
+                <div class="text-3xl font-bold text-orange-400">4</div>
+                <div class="text-gray-500">Past Employers</div>
+              </div>
+              {/* Add Project Count later if desired
+                     <div class="text-center">
+                        <div class="text-3xl font-bold text-orange-400">{projects.length}+</div>
+                        <div class="text-gray-500">Projects Delivered</div>
+                    </div>
+                    */}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="py-20 border-t border-gray-700">
+        <h2 class="text-3xl font-bold text-center mb-12 text-orange-400">Featured Projects</h2>
+        <div class="space-y-12">
+          {projects.map(project => (
+              <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-2 text-orange-400">{project.title}</h3>
+                <div class="flex flex-wrap gap-x-4 gap-y-2 text-sm text-gray-400 mb-3">
+                  <span>{project.company}</span>
+                  <span>|</span>
+                  <span>{project.dates}</span>
+                </div>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  {project.tech.map(t => (
+                      <span class="bg-gray-700 text-gray-300 text-xs font-semibold px-2.5 py-0.5 rounded">{t}</span>
+                  ))}
+                </div>
+                <p class="text-gray-300 leading-relaxed">{project.description}</p>
+              </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="contact" class="py-20 text-center border-t border-gray-700">
+        <h2 class="text-3xl font-bold text-center mb-6 text-orange-400">Get In Touch</h2>
+        <p class="text-lg text-gray-400 mb-8">Interested in collaborating? Send me a message!</p>
+        {/* Add contact form or links (LinkedIn, Email) here later */}
+        <a href="mailto:your.email@example.com" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded transition duration-300">
+          Contact Me
+        </a>
+      </section>
+
+    </main>
+
+    <footer class="bg-gray-800 py-6 mt-12">
+      <div class="container mx-auto px-6 text-center text-gray-500 text-sm">
+        &copy; {new Date().getFullYear()} Marko Andersson. All rights reserved.
+      </div>
+    </footer>
+
+  </div>
 </Layout>
