@@ -74,6 +74,21 @@ export const calculateYearsExperience = () => new Date().getFullYear() - careerS
 export const calculatePastEmployersCount = () => [...new Set(projects.map(project => project.company))].length;
 export const getAmountOfProjects = () => projects.length;
 
+// Technology to icon mapping
+const technologyIcons = {
+  'Java': { name: 'java', type: 'brands' },
+  'Spring Boot': { name: 'leaf', type: 'solid' },
+  'React': { name: 'react', type: 'brands' },
+  'PostgreSQL': { name: 'database', type: 'solid' },
+  'C#': { name: 'code', type: 'solid' },
+  '.NET Core': { name: 'microsoft', type: 'brands' },
+  'Azure': { name: 'cloud', type: 'solid' },
+  'Angular': { name: 'angular', type: 'brands' },
+  'JavaScript': { name: 'js', type: 'brands' },
+  'SQL Server': { name: 'database', type: 'solid' },
+  // Add more mappings as needed
+};
+
 // Extract technologies from projects and order by frequency
 export const getTechnologies = () => {
   return Object.entries(
@@ -86,8 +101,12 @@ export const getTechnologies = () => {
   )
     // Sort by count (descending)
     .sort((a, b) => b[1] - a[1])
-    // Extract just the tech names
-    .map(([tech]) => tech)
+    // Map to objects with name and icon
+    .map(([tech]) => ({
+      name: tech,
+      icon: technologyIcons[tech]?.name || 'code', // Default to 'code' icon if not found
+      iconType: technologyIcons[tech]?.type || 'solid' // Default to 'solid' type if not found
+    }))
     // Limit to seven most used technologies
     .slice(0, 7);
 };
