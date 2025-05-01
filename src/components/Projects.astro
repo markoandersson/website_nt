@@ -1,0 +1,37 @@
+---
+// src/components/Projects.astro
+export interface Props {
+  title: string;
+  projects: Array<{
+    title: string;
+    company: string;
+    dates: string;
+    tech: string[];
+    description: string;
+  }>;
+}
+
+const { title, projects } = Astro.props;
+---
+
+<section id="projects" class="py-20 border-t border-primary-light">
+  <h2 class="text-3xl font-bold text-center mb-12 text-accent-light">{title}</h2>
+  <div class="space-y-12">
+    {projects.map(project => (
+        <div class="bg-primary-medium p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold mb-2 text-accent-light">{project.title}</h3>
+          <div class="flex flex-wrap gap-x-4 gap-y-2 text-sm text-secondary mb-3">
+            <span>{project.company}</span>
+            <span>|</span>
+            <span>{project.dates}</span>
+          </div>
+          <div class="flex flex-wrap gap-2 mb-4">
+            {project.tech.map(t => (
+                <span class="bg-primary-light text-light text-xs font-semibold px-2.5 py-0.5 rounded">{t}</span>
+            ))}
+          </div>
+          <p class="text-light leading-relaxed">{project.description}</p>
+        </div>
+    ))}
+  </div>
+</section>

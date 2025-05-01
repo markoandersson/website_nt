@@ -1,6 +1,3 @@
-// src/data/portfolioData.js
-// Portfolio data for Marko Andersson's website
-
 // Key expertise areas
 export const keyExpertise = [
   { name: 'Web Application Development', details: 'Java/Spring, C#/.NET Core, JavaScript' },

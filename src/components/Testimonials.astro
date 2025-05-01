@@ -1,0 +1,44 @@
+---
+// src/components/Testimonials.astro
+export interface Props {
+  title: string;
+  testimonials: Array<{
+    text: string;
+    role: string;
+  }>;
+}
+
+const { title, testimonials } = Astro.props;
+---
+
+<section id="testimonials" class="py-20 border-t border-primary-light">
+  <h2 class="text-3xl font-bold text-center mb-12 text-accent-light">{title}</h2>
+  <div class="relative max-w-7xl mx-auto">
+    <!-- Navigation arrows -->
+    <button id="testimonial-prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-primary-medium hover:bg-primary-light text-accent-light rounded-full p-2 shadow-lg focus:outline-none transition-colors" aria-label="Previous testimonial">
+      <i class="fa-solid fa-chevron-left text-xl"></i>
+    </button>
+    <button id="testimonial-next" class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-primary-medium hover:bg-primary-light text-accent-light rounded-full p-2 shadow-lg focus:outline-none transition-colors" aria-label="Next testimonial">
+      <i class="fa-solid fa-chevron-right text-xl"></i>
+    </button>
+
+    <!-- Container with fixed width to show exactly 3 testimonials on desktop -->
+    <div id="testimonials-container" class="overflow-x-auto pb-4 hide-scrollbar px-10">
+      <div class="flex space-x-6">
+        {testimonials.map(testimonial => (
+          <div class="bg-primary-medium p-6 rounded-lg shadow-lg flex flex-col flex-shrink-0 w-full sm:w-[calc(100%-2rem)] md:w-[calc(33.333%-1rem)]">
+            <div class="mb-4 text-accent-light">
+              <i class="fa-solid fa-quote-left text-2xl opacity-50"></i>
+            </div>
+            <p class="text-light italic flex-grow mb-6 leading-relaxed">"{testimonial.text}"</p>
+            <div class="mt-auto">
+              <p class="text-accent-lighter font-semibold">— {testimonial.role}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <script src="../scripts/testimonials.js"></script>
+</section>
