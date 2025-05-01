@@ -63,6 +63,31 @@ const yearsExperience = new Date().getFullYear() - careerStartYear;
 const pastEmployersCount = [...new Set(projects.map(project => project.company))].length;
 
 const amountOfProjects = projects.length;
+
+// Testimonials data - feedback received from various persons (no names mentioned)
+const testimonials = [
+  {
+    text: "Working with this developer was a game-changer for our legacy system. Their expertise in modernization saved us countless hours and improved our system's performance dramatically.",
+    role: "Project Manager"
+  },
+  {
+    text: "Exceptional problem-solving skills and attention to detail. They quickly identified bottlenecks in our codebase and implemented elegant solutions that stood the test of time.",
+    role: "Tech Lead"
+  },
+  {
+    text: "A true professional who delivers high-quality code consistently. Their ability to understand complex business requirements and translate them into technical solutions is remarkable.",
+    role: "Product Owner"
+  },
+  {
+    text: "Their approach to legacy code modernization was methodical and effective. They not only improved our system but also documented everything clearly for future maintenance.",
+    role: "CTO"
+  },
+  {
+    text: "An excellent communicator who keeps stakeholders informed at every stage. They have a rare combination of technical expertise and the ability to explain complex concepts in simple terms.",
+    role: "Senior Manager"
+  }
+];
+
 // Social media links with icons
 ---
 
@@ -75,6 +100,7 @@ const amountOfProjects = projects.length;
         <div class="space-x-6">
           <a href="#home" class="hover:text-accent-light">Home</a>
           <a href="#about" class="hover:text-accent-light">About</a>
+          <a href="#testimonials" class="hover:text-accent-light">Testimonials</a>
           <a href="#projects" class="hover:text-accent-light">Projects</a>
           <a href="#contact" class="hover:text-accent-light">Contact</a>
         </div>
@@ -164,6 +190,73 @@ const amountOfProjects = projects.length;
             </div>
           </div>
         </div>
+      </section>
+
+      <section id="testimonials" class="py-20 border-t border-primary-light">
+        <h2 class="text-3xl font-bold text-center mb-12 text-accent-light">What People Say</h2>
+        <div class="relative max-w-7xl mx-auto">
+          <!-- Navigation arrows -->
+          <button id="testimonial-prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-primary-medium hover:bg-primary-light text-accent-light rounded-full p-2 shadow-lg focus:outline-none transition-colors" aria-label="Previous testimonial">
+            <i class="fa-solid fa-chevron-left text-xl"></i>
+          </button>
+          <button id="testimonial-next" class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-primary-medium hover:bg-primary-light text-accent-light rounded-full p-2 shadow-lg focus:outline-none transition-colors" aria-label="Next testimonial">
+            <i class="fa-solid fa-chevron-right text-xl"></i>
+          </button>
+
+          <!-- Container with fixed width to show exactly 3 testimonials on desktop -->
+          <div id="testimonials-container" class="overflow-x-auto pb-4 hide-scrollbar px-10">
+            <div class="flex space-x-6">
+              {testimonials.map(testimonial => (
+                <div class="bg-primary-medium p-6 rounded-lg shadow-lg flex flex-col flex-shrink-0 w-full sm:w-[calc(100%-2rem)] md:w-[calc(33.333%-1rem)]">
+                  <div class="mb-4 text-accent-light">
+                    <i class="fa-solid fa-quote-left text-2xl opacity-50"></i>
+                  </div>
+                  <p class="text-light italic flex-grow mb-6 leading-relaxed">"{testimonial.text}"</p>
+                  <div class="mt-auto">
+                    <p class="text-accent-lighter font-semibold">— {testimonial.role}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <script>
+          // Wait for the DOM to be fully loaded
+          document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('testimonials-container');
+            const prevBtn = document.getElementById('testimonial-prev');
+            const nextBtn = document.getElementById('testimonial-next');
+
+            if (container && prevBtn && nextBtn) {
+              // Calculate the width of a single testimonial card plus margin
+              const scrollAmount = () => {
+                // On mobile and small screens, scroll full width
+                if (window.innerWidth < 768) {
+                  return container.clientWidth;
+                }
+                // On medium screens and up, scroll 1/3 of the container width
+                return container.clientWidth / 3;
+              };
+
+              // Scroll to previous testimonial
+              prevBtn.addEventListener('click', () => {
+                container.scrollBy({
+                  left: -scrollAmount(),
+                  behavior: 'smooth'
+                });
+              });
+
+              // Scroll to next testimonial
+              nextBtn.addEventListener('click', () => {
+                container.scrollBy({
+                  left: scrollAmount(),
+                  behavior: 'smooth'
+                });
+              });
+            }
+          });
+        </script>
       </section>
 
       <section id="projects" class="py-20 border-t border-primary-light">
