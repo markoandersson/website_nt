@@ -2,6 +2,14 @@
 // src/pages/index.astro
 // Basic Layout component assumed (adjust path if needed)
 import Layout from '../layouts/Layout.astro';
+import Technology from '../components/Technology.astro';
+import Testimonials from '../components/Testimonials.astro';
+import Projects from '../components/Projects.astro';
+import AboutMe from '../components/AboutMe.astro';
+import GetInTouch from '../components/GetInTouch.astro';
+import Navigation from '../components/Navigation.astro';
+import Hero from '../components/Hero.astro';
+import Footer from '../components/Footer.astro';
 import { 
   keyExpertise, 
   projects, 
@@ -25,164 +33,32 @@ const technologies = getTechnologies();
 <Layout title="Marko Andersson - Portfolio">
   <div class="bg-primary-dark text-primary min-h-screen font-sans">
 
-    <header class="sticky top-0 z-50 bg-primary-medium shadow-md">
-      <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
-        <div class="text-xl font-bold text-accent">Marko Andersson</div>
-        <div id="navigation-links" class="flex items-center">
-          <!-- Navigation links will be dynamically generated -->
-        </div>
-      </nav>
-    </header>
+    <Navigation />
 
     <main class="container mx-auto px-6 py-12">
-      <section id="home" class="py-20 md:py-32">
-        <div class="w-full h-64 md:h-96 bg-gradient-primary rounded-lg relative overflow-hidden flex items-center">
-          <div class="absolute inset-0 w-full h-full flex justify-end">
-            <img src="/images/plush_marko_transparent.png" alt="Marko Andersson" class="object-contain h-full w-auto" />
-          </div>
-          <div class="relative z-10 text-center md:text-left p-8 md:p-12 md:max-w-2xl">
-            <h1 class="text-4xl md:text-5xl font-bold mb-2 text-white drop-shadow-lg">Hello.</h1>
-            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white drop-shadow-lg">I'm Marko Andersson</h2>
-            <p class="text-xl md:text-2xl text-accent-lighter mb-6 drop-shadow-lg">
-              Senior Developer | Legacy Modernization Specialist
-            </p>
-            <p class="text-lg text-white drop-shadow-md mb-6">
-              Passionate about building robust software solutions and modernizing existing systems.
-            </p>
-          </div>
-        </div>
-      </section>
+      <Hero />
     </main>
 
-    <section id="technologies" class="w-full py-8 border-t border-b border-primary-light">
-      <div class="w-full px-6 flex flex-wrap justify-between items-center text-tertiary text-lg">
-        {technologies.map(tech => (
-            <span class="whitespace-nowrap flex items-center gap-2 py-2 px-3 transition-colors duration-300 hover:text-accent-light">
-              <i class={`fa-${tech.iconType} fa-${tech.icon} text-accent-lighter`} aria-hidden="true"></i>
-              {tech.name}
-            </span>
-        ))}
-      </div>
-    </section>
+    <Technology technologies={technologies} />
 
-    <section id="contact" class="py-12 bg-primary-medium">
-      <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold mb-6 text-accent-light">Get In Touch</h2>
-        <p class="text-lg text-white mb-8">Interested in collaborating? Send me a message!</p>
-        <div class="flex justify-center space-x-8">
-          {socialMedia.map(social => (
-            <a href={social.url} target="_blank" rel="noopener noreferrer" class="text-white hover:text-accent-light transition duration-300">
-              <span class="sr-only">{social.name}</span>
-              <i class={`${social.icon === 'envelope' ? 'fa-solid' : 'fa-brands'} fa-${social.icon} text-4xl`} aria-hidden="true"></i>
-            </a>
-          ))}
-        </div>
-      </div>
-    </section>
+    <GetInTouch title="Get In Touch" socialMedia={socialMedia} />
 
     <main class="container mx-auto px-6 py-12">
 
-      <section id="about" class="py-20">
-        <h2 class="text-3xl font-bold text-center mb-12 text-accent-light">About Me & Expertise</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
-          <div class="space-y-6">
-            {keyExpertise.map(item => (
-                <div>
-                  {/* Placeholder for potential icon */}
-                  {/* <Icon name="code" class="inline-block w-6 h-6 mr-2 text-accent-light" /> */}
-                  <h3 class="text-xl font-semibold text-accent-light mb-1">{item.name}</h3>
-                  <p class="text-secondary">{item.details}</p>
-                </div>
-            ))}
-          </div>
+      <AboutMe 
+        title="About Me & Expertise"
+        keyExpertise={keyExpertise}
+        yearsExperience={yearsExperience}
+        pastEmployersCount={pastEmployersCount}
+        amountOfProjects={amountOfProjects}
+      />
 
-          <div class="space-y-6">
-            <h3 class="text-2xl font-semibold mb-4">My Journey</h3>
-            <p class="text-secondary leading-relaxed">
-              {/* Placeholder About Me Text */}
-              With over {yearsExperience} years in the software industry across {pastEmployersCount} different employers, I've cultivated a deep understanding of the full software development lifecycle. My primary focus lies in [mention something specific, e.g., backend development, full-stack solutions]. I thrive on tackling complex challenges, particularly modernizing legacy systems to improve efficiency and maintainability. I believe in pragmatic agile approaches that streamline development without unnecessary overhead. Exploring how AI can augment the development process is also a key interest of mine.
-              <br/><br/>
-              Let's connect and discuss how I can contribute to your next project.
-            </p>
-            <div class="flex justify-around pt-4 border-t border-primary-light">
-              <div class="text-center">
-                <div class="text-3xl font-bold text-accent-light">{yearsExperience}+</div>
-                <div class="text-tertiary">Years Experience</div>
-              </div>
-              <div class="text-center">
-                <div class="text-3xl font-bold text-accent-light">{pastEmployersCount}</div>
-                <div class="text-tertiary">Past Employers</div>
-              </div>
-               <div class="text-center">
-                  <div class="text-3xl font-bold text-accent-light">{amountOfProjects}+</div>
-                  <div class="text-tertiary">Projects Delivered</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Testimonials title="What People Say" testimonials={testimonials} />
 
-      <section id="testimonials" class="py-20 border-t border-primary-light">
-        <h2 class="text-3xl font-bold text-center mb-12 text-accent-light">What People Say</h2>
-        <div class="relative max-w-7xl mx-auto">
-          <!-- Navigation arrows -->
-          <button id="testimonial-prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-primary-medium hover:bg-primary-light text-accent-light rounded-full p-2 shadow-lg focus:outline-none transition-colors" aria-label="Previous testimonial">
-            <i class="fa-solid fa-chevron-left text-xl"></i>
-          </button>
-          <button id="testimonial-next" class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-primary-medium hover:bg-primary-light text-accent-light rounded-full p-2 shadow-lg focus:outline-none transition-colors" aria-label="Next testimonial">
-            <i class="fa-solid fa-chevron-right text-xl"></i>
-          </button>
-
-          <!-- Container with fixed width to show exactly 3 testimonials on desktop -->
-          <div id="testimonials-container" class="overflow-x-auto pb-4 hide-scrollbar px-10">
-            <div class="flex space-x-6">
-              {testimonials.map(testimonial => (
-                <div class="bg-primary-medium p-6 rounded-lg shadow-lg flex flex-col flex-shrink-0 w-full sm:w-[calc(100%-2rem)] md:w-[calc(33.333%-1rem)]">
-                  <div class="mb-4 text-accent-light">
-                    <i class="fa-solid fa-quote-left text-2xl opacity-50"></i>
-                  </div>
-                  <p class="text-light italic flex-grow mb-6 leading-relaxed">"{testimonial.text}"</p>
-                  <div class="mt-auto">
-                    <p class="text-accent-lighter font-semibold">— {testimonial.role}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-      </section>
-
-      <section id="projects" class="py-20 border-t border-primary-light">
-        <h2 class="text-3xl font-bold text-center mb-12 text-accent-light">Featured Projects</h2>
-        <div class="space-y-12">
-          {projects.map(project => (
-              <div class="bg-primary-medium p-6 rounded-lg shadow-lg">
-                <h3 class="text-2xl font-semibold mb-2 text-accent-light">{project.title}</h3>
-                <div class="flex flex-wrap gap-x-4 gap-y-2 text-sm text-secondary mb-3">
-                  <span>{project.company}</span>
-                  <span>|</span>
-                  <span>{project.dates}</span>
-                </div>
-                <div class="flex flex-wrap gap-2 mb-4">
-                  {project.tech.map(t => (
-                      <span class="bg-primary-light text-light text-xs font-semibold px-2.5 py-0.5 rounded">{t}</span>
-                  ))}
-                </div>
-                <p class="text-light leading-relaxed">{project.description}</p>
-              </div>
-          ))}
-        </div>
-      </section>
+      <Projects title="Featured Projects" projects={projects} />
     </main>
 
-    <footer class="bg-primary-medium py-6 mt-12">
-      <div class="container mx-auto px-6 text-center">
-        <div class="text-tertiary text-sm">
-          &copy; {new Date().getFullYear()} Marko Andersson. All rights reserved.
-        </div>
-      </div>
-    </footer>
+    <Footer />
 
     <script src="../scripts/domManipulation.js"></script>
   </div>

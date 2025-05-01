@@ -47,9 +47,7 @@ A simple Astro site that can be deployed to GitHub Pages.
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
-│       ├── index.astro
-│       ├── about.astro
-│       └── contact.astro
+│       └── index.astro
 ├── astro.config.mjs
 ├── package.json
 └── README.md
