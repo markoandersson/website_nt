@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS can be added here */
+:root {
+  /* Primary colors - aligned with tailwind.config.js */
+  --color-primary: #FF5733;
+  --color-primary-light: #FF7F58;
+  --color-primary-dark: #E63E1A;
+
+  /* Orange shades */
+  --color-accent: #F97316; /* orange-500 */
+  --color-accent-light: #FB923C; /* orange-400 */
+  --color-accent-lighter: #FDBA74; /* orange-300 */
+
+  /* Gray shades */
+  --color-bg-dark: #111827; /* gray-900 */
+  --color-bg-medium: #1F2937; /* gray-800 */
+  --color-bg-light: #374151; /* gray-700 */
+
+  /* Text colors */
+  --color-text-primary: #E5E7EB; /* gray-200 */
+  --color-text-secondary: #9CA3AF; /* gray-400 */
+  --color-text-tertiary: #6B7280; /* gray-500 */
+  --color-text-light: #D1D5DB; /* gray-300 */
+  --color-text-white: #FFFFFF;
+
+  /* Accent colors */
+  --color-purple: #9333EA; /* purple-600 */
+}
+
+/* Custom utility classes using CSS variables */
+@layer utilities {
+  .bg-primary-dark {
+    background-color: var(--color-bg-dark);
+  }
+  .bg-primary-medium {
+    background-color: var(--color-bg-medium);
+  }
+  .bg-primary-light {
+    background-color: var(--color-bg-light);
+  }
+  .text-primary {
+    color: var(--color-text-primary);
+  }
+  .text-secondary {
+    color: var(--color-text-secondary);
+  }
+  .text-tertiary {
+    color: var(--color-text-tertiary);
+  }
+  .text-light {
+    color: var(--color-text-light);
+  }
+  .text-white {
+    color: var(--color-text-white);
+  }
+  .text-accent {
+    color: var(--color-accent);
+  }
+  .text-accent-light {
+    color: var(--color-accent-light);
+  }
+  .text-accent-lighter {
+    color: var(--color-accent-lighter);
+  }
+  .border-primary-light {
+    border-color: var(--color-bg-light);
+  }
+  .hover\:text-accent-light:hover {
+    color: var(--color-accent-light);
+  }
+  .bg-gradient-primary {
+    background-image: linear-gradient(to bottom right, var(--color-accent), var(--color-purple));
+  }
+  /* Hide scrollbar but maintain scroll functionality */
+  .hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;             /* Chrome, Safari and Opera */
+  }
+}
+
+@layer base {
+  .dark {
+    color-scheme: dark;
+  }
+}
