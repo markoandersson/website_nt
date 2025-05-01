@@ -3,11 +3,6 @@
 // Basic Layout component assumed (adjust path if needed)
 import Layout from '../layouts/Layout.astro';
 
-// Placeholder data (you can replace or fetch this later)
-const technologies = [
-  'Tech 1', 'Tech 2', 'Tech 3', 'Tech 4', 'Tech 5', 'Tech 6', 'Tech 7'
-];
-
 const projects = [
   {
     title: 'Project Alpha',
@@ -31,6 +26,22 @@ const projects = [
     description: 'Developed and maintained features for a large-scale enterprise application, improving performance and stability.'
   }
 ];
+
+// Extract technologies from projects and order by frequency using functional approach
+const technologies = Object.entries(
+    // Flatten all tech arrays into a single array and reduce to count occurrences
+    projects.flatMap(project => project.tech)
+        .reduce((counts, tech) => {
+          counts[tech] = (counts[tech] || 0) + 1;
+          return counts;
+        }, {})
+    )
+    // Sort by count (descending)
+    .sort((a, b) => b[1] - a[1])
+    // Extract just the tech names
+    .map(([tech]) => tech)
+    // Limit to seven most used technologies
+    .slice(0, 7);
 
 const keyExpertise = [
   { name: 'Web Application Development', details: 'Java/Spring, C#/.NET Core, JavaScript' },
