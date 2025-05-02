@@ -50,7 +50,7 @@ const { title, testimonials } = Astro.props;
     </div>
 
     <!-- Pagination dots -->
-    <div class="flex justify-center mt-4">
+    <div class="testimonial-dots flex justify-center mt-4">
       {testimonials.map((_, index) => (
         <button 
           class="testimonial-dot mx-1 w-3 h-3 rounded-full bg-primary-light opacity-50 hover:opacity-100 focus:opacity-100" 
@@ -69,7 +69,7 @@ const { title, testimonials } = Astro.props;
     const slides = Array.from(track.children);
     const nextButton = document.getElementById('next-testimonial');
     const prevButton = document.getElementById('prev-testimonial');
-    const dotsNav = document.querySelector('.flex.justify-center.mt-4');
+    const dotsNav = document.querySelector('.testimonial-dots');
     const dots = Array.from(document.querySelectorAll('.testimonial-dot'));
 
     if (!track || slides.length === 0) return;
