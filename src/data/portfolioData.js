@@ -31,6 +31,40 @@ export const projects = [
   }
 ];
 
+// Books that have influenced me
+export const books = [
+  {
+    title: 'Clean Code',
+    authors: ['Robert C. Martin'],
+    coverImage: 'https://m.media-amazon.com/images/I/41xShlnTZTL._SX376_BO1,204,203,200_.jpg',
+    description: 'A handbook of agile software craftsmanship that has helped me write better, more maintainable code.'
+  },
+  {
+    title: 'The Pragmatic Programmer',
+    authors: ['Andrew Hunt', 'David Thomas'],
+    coverImage: 'https://m.media-amazon.com/images/I/51W1sBPO7tL._SX380_BO1,204,203,200_.jpg',
+    description: 'From journeyman to master - a book that shaped my approach to software development.'
+  },
+  {
+    title: 'Design Patterns',
+    authors: ['Erich Gamma', 'Richard Helm', 'Ralph Johnson', 'John Vlissides'],
+    coverImage: 'https://m.media-amazon.com/images/I/51szD9HC9pL._SX395_BO1,204,203,200_.jpg',
+    description: 'Elements of Reusable Object-Oriented Software - fundamental patterns I use regularly.'
+  },
+  {
+    title: 'Refactoring',
+    authors: ['Martin Fowler'],
+    coverImage: 'https://m.media-amazon.com/images/I/41odjJlPgHL._SX400_BO1,204,203,200_.jpg',
+    description: 'Improving the design of existing code - essential techniques for maintaining software.'
+  },
+  {
+    title: 'Domain-Driven Design',
+    authors: ['Eric Evans'],
+    coverImage: 'https://m.media-amazon.com/images/I/51sZW87slRL._SX375_BO1,204,203,200_.jpg',
+    description: 'Tackling complexity in the heart of software - changed how I approach complex business domains.'
+  }
+];
+
 // Social media links
 export const socialMedia = [
   { name: 'GitHub', icon: 'github', url: 'https://github.com/yourusername' },

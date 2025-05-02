@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Technology from '../components/Technology.astro';
 import Testimonials from '../components/Testimonials.astro';
 import Projects from '../components/Projects.astro';
+import Books from '../components/Books.astro';
 import AboutMe from '../components/AboutMe.astro';
 import GetInTouch from '../components/GetInTouch.astro';
 import Navigation from '../components/Navigation.astro';
@@ -11,6 +12,7 @@ import Footer from '../components/Footer.astro';
 import { 
   keyExpertise, 
   projects, 
+  books,
   socialMedia, 
   testimonials, 
   calculateYearsExperience, 
@@ -53,6 +55,8 @@ const technologies = getTechnologies();
       <Testimonials title="What People Say" testimonials={testimonials} />
 
       <Projects title="Featured Projects" projects={projects} />
+
+      <Books title="Books That Influenced Me" books={books} />
     </main>
 
     <Footer />
