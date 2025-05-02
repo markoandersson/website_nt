@@ -31,6 +31,8 @@ export const projects = [
   }
 ];
 
+export const booksRead = 20
+
 // Books that have influenced me
 export const books = [
   {
@@ -102,7 +104,6 @@ export const testimonials = [
 
 // Helper functions to calculate derived data
 export const calculateYearsExperience = () => new Date().getFullYear() - careerStartYear;
-export const calculatePastEmployersCount = () => [...new Set(projects.map(project => project.company))].length;
 export const getAmountOfProjects = () => projects.length;
 
 // Technology to icon mapping

@@ -14,16 +14,15 @@ import {
   projects, 
   books,
   socialMedia, 
-  testimonials, 
+  testimonials,
+  booksRead,
   calculateYearsExperience, 
-  calculatePastEmployersCount, 
-  getAmountOfProjects, 
+  getAmountOfProjects,
   getTechnologies 
 } from '../data/portfolioData.js';
 
 // Calculate dynamic values
 const yearsExperience = calculateYearsExperience();
-const pastEmployersCount = calculatePastEmployersCount();
 const amountOfProjects = getAmountOfProjects();
 const technologies = getTechnologies();
 
@@ -48,7 +47,7 @@ const technologies = getTechnologies();
         title="About Me & Expertise"
         keyExpertise={keyExpertise}
         yearsExperience={yearsExperience}
-        pastEmployersCount={pastEmployersCount}
+        booksRead={booksRead}
         amountOfProjects={amountOfProjects}
       />
 

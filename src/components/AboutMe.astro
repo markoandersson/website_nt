@@ -7,11 +7,11 @@ export interface Props {
     details: string;
   }>;
   yearsExperience: number;
-  pastEmployersCount: number;
+  booksRead: number;
   amountOfProjects: number;
 }
 
-const { title, keyExpertise, yearsExperience, pastEmployersCount, amountOfProjects } = Astro.props;
+const { title, keyExpertise, yearsExperience, booksRead, amountOfProjects } = Astro.props;
 ---
 
 <section id="about" class="py-20">
@@ -32,7 +32,7 @@ const { title, keyExpertise, yearsExperience, pastEmployersCount, amountOfProjec
       <h3 class="text-2xl font-semibold mb-4">My Journey</h3>
       <p class="text-secondary leading-relaxed">
         {/* Placeholder About Me Text */}
-        With over {yearsExperience} years in the software industry across {pastEmployersCount} different employers, I've cultivated a deep understanding of the full software development lifecycle. My primary focus lies in [mention something specific, e.g., backend development, full-stack solutions]. I thrive on tackling complex challenges, particularly modernizing legacy systems to improve efficiency and maintainability. I believe in pragmatic agile approaches that streamline development without unnecessary overhead. Exploring how AI can augment the development process is also a key interest of mine.
+        With over {yearsExperience} years in the software industry across different employers, I've cultivated a deep understanding of the full software development lifecycle. My primary focus lies in [mention something specific, e.g., backend development, full-stack solutions]. I thrive on tackling complex challenges, particularly modernizing legacy systems to improve efficiency and maintainability. I believe in pragmatic agile approaches that streamline development without unnecessary overhead. Exploring how AI can augment the development process is also a key interest of mine.
         <br/><br/>
         Let's connect and discuss how I can contribute to your next project.
       </p>
@@ -41,13 +41,13 @@ const { title, keyExpertise, yearsExperience, pastEmployersCount, amountOfProjec
           <div class="text-3xl font-bold text-accent-light">{yearsExperience}+</div>
           <div class="text-tertiary">Years Experience</div>
         </div>
-        <div class="text-center">
-          <div class="text-3xl font-bold text-accent-light">{pastEmployersCount}</div>
-          <div class="text-tertiary">Past Employers</div>
-        </div>
          <div class="text-center">
             <div class="text-3xl font-bold text-accent-light">{amountOfProjects}+</div>
             <div class="text-tertiary">Projects Delivered</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-accent-light">{booksRead}+</div>
+          <div class="text-tertiary">Books read</div>
         </div>
       </div>
     </div>
