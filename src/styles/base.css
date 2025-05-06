@@ -4,19 +4,15 @@
 
 /* Custom CSS can be added here */
 :root {
-  /* Primary colors - aligned with tailwind.config.js */
-  --color-primary: #FF5733;
-  --color-primary-light: #FF7F58;
-  --color-primary-dark: #E63E1A;
 
   /* Orange shades */
   --color-accent: #F97316; /* orange-500 */
-  --color-accent-light: #FB923C; /* orange-400 */
-  --color-accent-lighter: #FDBA74; /* orange-300 */
+  --color-accent-light: rgb(106,	161,	217	); /* orange-400 */
+  --color-accent-lighter: rgb(164,	199,	204	); /* orange-300 */
 
   /* Gray shades */
-  --color-bg-dark: #111827; /* gray-900 */
-  --color-bg-medium: #1F2937; /* gray-800 */
+  --color-bg-dark: rgb(8,12,20)	;
+  --color-bg-medium: rgb(10,16,29);
   --color-bg-light: #374151; /* gray-700 */
 
   /* Text colors */

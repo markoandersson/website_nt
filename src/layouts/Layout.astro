@@ -26,9 +26,6 @@ const { title, description = "An Astro site deployable to GitHub Pages or Netlif
     <style is:global>
       :root {
         --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        --color-bg: #f6f6f6;
-        --color-text: #333;
-        --color-primary: #FF5733;
       }
 
       html {
@@ -38,7 +35,7 @@ const { title, description = "An Astro site deployable to GitHub Pages or Netlif
       }
 
       html.dark {
-        --color-bg: #1E1E1E;
+        --color-bg: var(--color-bg-dark);
         --color-text: #FFFFFF;
         --color-primary: #FF5733;
         background-color: var(--color-bg);
