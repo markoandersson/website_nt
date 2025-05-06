@@ -6,7 +6,7 @@ export interface Props {
   description?: string;
 }
 
-const { title, description = "An Astro site deployable to GitHub Pages or Netlify" } = Astro.props;
+const { title, description = "" } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -43,8 +43,6 @@ const { title, description = "An Astro site deployable to GitHub Pages or Netlif
       }
 
       body {
-        margin: 0;
-        padding: 0;
         max-width: 1200px;
         margin: 0 auto;
         padding: 1rem;
