@@ -16,7 +16,7 @@ const { socialMedia } = Astro.props;
   <div class="container mx-auto">
     <div class="flex flex-col md:flex-row items-center">
 
-      <div class="md:w-3/5 lg:w-1/2 text-center md:text-left mb-12 md:mb-0 md:pr-10 lg:pr-16">
+      <div class="md:w-3/5 lg:w-3/5 text-center md:text-left mb-12 md:mb-0 md:pr-10 lg:pr-16">
         <h1 class="text-2xl md:text-2xl font-bold mb-3 font-mono">
           <span class="text-green-500">/* Modernizing legacy software, one clean commit at a time. */</span>
         </h1>
@@ -38,7 +38,7 @@ const { socialMedia } = Astro.props;
     </div>
   </div>
   <div class="container mx-auto px-6 text-center">
-    <div class="flex justify-items-start space-x-8">
+    <div class="flex md:justify-start justify-center pt-6 space-x-8">
       {socialMedia.map(social => (
           <a href={social.url} target="_blank" rel="noopener noreferrer" class="text-accent-light hover:text-accent-light transition duration-300">
             <span class="sr-only">{social.name}</span>
