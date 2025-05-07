@@ -3,6 +3,27 @@
 @tailwind utilities;
 
 /* Custom CSS can be added here */
+
+/* Blinking cursor animation */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.typing-cursor {
+  display: inline-block;
+  color: #6AE1FF;
+  font-weight: bold;
+  animation: blink 1s step-end infinite;
+}
+
+.code-block {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 1rem;
+  border-left: 3px solid var(--color-accent-light);
+}
 :root {
 
   /* Orange shades */
