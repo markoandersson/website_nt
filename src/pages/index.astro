@@ -5,7 +5,6 @@ import Testimonials from '../components/Testimonials.astro';
 import Projects from '../components/Projects.astro';
 import Books from '../components/Books.astro';
 import AboutMe from '../components/AboutMe.astro';
-import GetInTouch from '../components/GetInTouch.astro';
 import Hero from '../components/Hero.astro';
 import Footer from '../components/Footer.astro';
 import { 
@@ -34,12 +33,10 @@ const technologies = getTechnologies();
   <div class="bg-primary-dark text-primary min-h-screen font-sans">
 
     <main class="container mx-auto px-6 py-12">
-      <Hero />
+      <Hero socialMedia={socialMedia} />
     </main>
 
     <Technology technologies={technologies} />
-
-    <GetInTouch title="Get In Touch" socialMedia={socialMedia} />
 
     <main class="container mx-auto px-6 py-12">
 
