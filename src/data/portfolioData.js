@@ -102,6 +102,25 @@ export const testimonials = [
   }
 ];
 
+// Manifesto and principles data
+export const manifesto = [
+  { id: 1, boldText: "Individuals and interactions", regularText: "over processes and tools" },
+  { id: 2, boldText: "Working software", regularText: "over comprehensive documentation" },
+  { id: 3, boldText: "Customer collaboration", regularText: "over contract negotiation" },
+  { id: 4, boldText: "Responding to change", regularText: "over following a plan" },
+  { id: 5, boldText: "Simplicity", regularText: "over complexity" },
+  { id: 6, boldText: "Quality code", regularText: "over quick fixes" }
+];
+
+export const principles = [
+  { id: 1, text: "Our highest priority is to satisfy the customer through early and continuous delivery of valuable software" },
+  { id: 2, text: "Welcome changing requirements, even late in development" },
+  { id: 3, text: "Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale" },
+  { id: 4, text: "Business people and developers must work together daily throughout the project" },
+  { id: 5, text: "Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done" },
+  { id: 6, text: "The most efficient and effective method of conveying information to and within a development team is face-to-face conversation" }
+];
+
 // Helper functions to calculate derived data
 export const calculateYearsExperience = () => new Date().getFullYear() - careerStartYear;
 export const getAmountOfProjects = () => projects.length;
