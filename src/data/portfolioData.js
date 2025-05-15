@@ -104,21 +104,29 @@ export const testimonials = [
 
 // Manifesto and principles data
 export const manifesto = [
-  { id: 1, boldText: "Individuals and interactions", regularText: "over processes and tools" },
-  { id: 2, boldText: "Working software", regularText: "over comprehensive documentation" },
-  { id: 3, boldText: "Customer collaboration", regularText: "over contract negotiation" },
-  { id: 4, boldText: "Responding to change", regularText: "over following a plan" },
-  { id: 5, boldText: "Simplicity", regularText: "over complexity" },
-  { id: 6, boldText: "Quality code", regularText: "over quick fixes" }
+  { id: 1, boldText: "Sustainable solutions", regularText: "over quick fixes" },
+  { id: 2, boldText: "Understanding root causes", regularText: "over treating symptoms" },
+  { id: 3, boldText: "System thinking", regularText: "over isolated optimizations" },
+  { id: 4, boldText: "People collaboration", regularText: "over siloed expertise" },
+  { id: 5, boldText: "Adapting to new insights", regularText: "over following the initial plan" },
+  { id: 6, boldText: "Iterative evolution of legacy systems", regularText: "over immediate, high-risk rewrites" },
+  { id: 7, boldText: "Customer-centric problem solving", regularText: "over blindly implementing feature lists" },
 ];
 
 export const principles = [
-  { id: 1, text: "Our highest priority is to satisfy the customer through early and continuous delivery of valuable software" },
-  { id: 2, text: "Welcome changing requirements, even late in development" },
-  { id: 3, text: "Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale" },
-  { id: 4, text: "Business people and developers must work together daily throughout the project" },
-  { id: 5, text: "Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done" },
-  { id: 6, text: "The most efficient and effective method of conveying information to and within a development team is face-to-face conversation" }
+  { id: 1, text: "I aim to create code that is not only technically sound but also readable and maintainable for the long term." },
+  { id: 2, text: "I believe in \"leaving the campground cleaner than you found it,\" consistently producing clean, well-tested code." },
+  { id: 3, text: "I understand that technical challenges are often symptoms of underlying organizational patterns." },
+  { id: 4, text: "I focus on investigating the underlying needs and the \"why\" behind the \"what\" when solving problems." },
+  { id: 5, text: "I aim to create a shared understanding between developers and business stakeholders where the code reflects real-world actions and concepts." },
+  { id: 6, text: "I understand that each system and its organizational context is unique, and \"ready recipes\" for improvement rarely succeed." },
+  { id: 7, text: "I recognize that significant change is a team effort requiring buy-in and collaboration from other developers, business stakeholders, and those skilled in navigating organizational dynamics." },
+  { id: 8, text: "I view TDD primarily as a tool for designing software that precisely meets requirements and exhibits good internal structure." },
+  { id: 9, text: "I prioritize a pragmatic approach to delivering working software that truly meets user needs." },
+  { id: 10, text: "I recognize the inherent business value in systems that have served their purpose over years instead of calling them legacy." },
+  { id: 11, text: "I focus on strategic, iterative evolution rather than immediate, high-risk rewrites." },
+  { id: 12, text: "I leverage techniques for safely refactoring and introducing tests into systems lacking adequate test harnesses." },
+  { id: 13, text: "I believe that true value comes from deeply understanding the problems customers are trying to solve." },
 ];
 
 // Helper functions to calculate derived data

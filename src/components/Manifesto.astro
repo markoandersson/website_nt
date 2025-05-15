@@ -42,24 +42,31 @@ const { title, manifesto, principles } = Astro.props;
     <div class="relative overflow-hidden">
       <!-- Manifesto list -->
       <div id="manifestoList" class="absolute w-full transition-all duration-500 opacity-100 transform translate-x-0">
-        <ul class="space-y-6">
+        <p class="text-primary text-center text pb-10">
+          I'm  uncovering better ways of developing
+          modern software by doing it and helping others do it.
+          Through this work I have come to value:</p>
+        <ul class="space-y-2">
           {manifesto.map(item => (
-            <li class="p-6 rounded-lg shadow-md">
+            <li class="p-4 rounded-lg shadow-md">
               <div class="text-center">
                 <p class="text-lg text-secondary">
-                  <span class="text-xl font-bold">{item.boldText}</span> {item.regularText}
+                  <span class="text-xl font-bold text-primary">{item.boldText}</span> {item.regularText}
                 </p>
               </div>
             </li>
           ))}
         </ul>
+        <p class="text-secondary text-center text mt-6">That is, while many think there is value in the items on the right, I only value the items on the left.</p>
       </div>
+
 
       <!-- Principles list -->
       <div id="principlesList" class="absolute w-full transition-all duration-500 opacity-0 transform translate-x-full">
-        <ul class="space-y-6">
+        <p class="text-primary text-center text pb-10">I follow these principles:</p>
+        <ul class="space-y-2">
           {principles.map(item => (
-            <li class="p-6 rounded-lg shadow-md">
+            <li class="p-4 rounded-lg shadow-md">
               <div class="text-center">
                 <p class="text-lg text-secondary">{item.text}</p>
               </div>
