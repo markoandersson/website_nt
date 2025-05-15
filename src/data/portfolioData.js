@@ -151,19 +151,22 @@ export const manifesto = [
 ];
 
 export const principles = [
-  { id: 1, text: "I aim to create code that is not only technically sound but also readable and maintainable for the long term." },
-  { id: 2, text: "I believe in \"leaving the campground cleaner than you found it,\" consistently producing clean, well-tested code." },
-  { id: 3, text: "I understand that technical challenges are often symptoms of underlying organizational patterns." },
-  { id: 4, text: "I focus on investigating the underlying needs and the \"why\" behind the \"what\" when solving problems." },
-  { id: 5, text: "I aim to create a shared understanding between developers and business stakeholders where the code reflects real-world actions and concepts." },
-  { id: 6, text: "I understand that each system and its organizational context is unique, and \"ready recipes\" for improvement rarely succeed." },
-  { id: 7, text: "I recognize that significant change is a team effort requiring buy-in and collaboration from other developers, business stakeholders, and those skilled in navigating organizational dynamics." },
-  { id: 8, text: "I view TDD primarily as a tool for designing software that precisely meets requirements and exhibits good internal structure." },
-  { id: 9, text: "I prioritize a pragmatic approach to delivering working software that truly meets user needs." },
-  { id: 10, text: "I recognize the inherent business value in systems that have served their purpose over years instead of calling them legacy." },
-  { id: 11, text: "I focus on strategic, iterative evolution rather than immediate, high-risk rewrites." },
-  { id: 12, text: "I leverage techniques for safely refactoring and introducing tests into systems lacking adequate test harnesses." },
-  { id: 13, text: "I believe that true value comes from deeply understanding the problems customers are trying to solve." },
+  "I aim to create code that is not only technically sound but also readable and maintainable for the long term." ,
+  "I write code for humans first, computers second. Clarity and maintainability outweigh clever optimizations." ,
+  "I believe in \"leaving the campground cleaner than you found it,\" consistently producing clean, well-tested code." ,
+  "I understand knowledge sharing multiplies the impact of good solutions. Documentation and mentoring are essential parts of the process.",
+  "I understand that technical challenges are often symptoms of underlying organizational patterns." ,
+  "I focus on investigating the underlying needs and the \"why\" behind the \"what\" when solving problems." ,
+  "I aim to create a shared understanding between developers and business stakeholders where the code reflects real-world actions and concepts." ,
+  "I understand that each system and its organizational context is unique, and \"ready recipes\" for improvement rarely succeed." ,
+  "I recognize that significant change is a team effort requiring buy-in and collaboration from other developers, business stakeholders, and those skilled in navigating organizational dynamics." ,
+  "I view TDD primarily as a tool for designing software that precisely meets requirements and exhibits good internal structure." ,
+  "I prioritize a pragmatic approach to delivering working software that truly meets user needs." ,
+  "I recognize the inherent business value in systems that have served their purpose over years instead of calling them legacy." ,
+  "I focus on strategic, iterative evolution rather than immediate, high-risk rewrites." ,
+  "I leverage techniques for safely refactoring and introducing tests into systems lacking adequate test harnesses." ,
+  "I believe that true value comes from deeply understanding the problems customers are trying to solve.",
+  "I think business value is the ultimate measure of technical success. Technology serves people, not the other way around."
 ];
 
 // Helper functions to calculate derived data
