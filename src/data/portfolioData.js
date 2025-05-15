@@ -81,24 +81,54 @@ export const careerStartYear = 2007;
 // Testimonials data
 export const testimonials = [
   {
-    text: "Working with this developer was a game-changer for our legacy system. Their expertise in modernization saved us countless hours and improved our system's performance dramatically.",
-    role: "Project Manager"
+    text: [
+        "He understand context, technical limitations and weaknesses well. He fixes or mitigates problems proactively and helps make a plans for better implementations.",
+        "He helps the whole team to work better with professional attitude and skills.",
+        "He is not afraid to raise issues and has logical and pragmatic approach to solving issues or designing new developments."
+        ],
+    role: "Lead Developer"
   },
   {
-    text: "Exceptional problem-solving skills and attention to detail. They quickly identified bottlenecks in our codebase and implemented elegant solutions that stood the test of time.",
-    role: "Tech Lead"
+    text: "Responsible and proactive. Competent in the field. Good communicator and team player.",
+    role: "Senior Developer"
   },
   {
-    text: "A true professional who delivers high-quality code consistently. Their ability to understand complex business requirements and translate them into technical solutions is remarkable.",
-    role: "Product Owner"
+    text: "Skilled, self-directed, helpful, execution and also great design skills.",
+    role: "Technology Director"
   },
   {
-    text: "Their approach to legacy code modernization was methodical and effective. They not only improved our system but also documented everything clearly for future maintenance.",
-    role: "CTO"
+    text: "With great cooperation, you have struggled through difficulties to implement a new solution. Good work!",
+    role: "Director"
   },
   {
-    text: "An excellent communicator who keeps stakeholders informed at every stage. They have a rare combination of technical expertise and the ability to explain complex concepts in simple terms.",
-    role: "Senior Manager"
+    text: "Marko Andersson has been adopting great to the stream and way-of-working from Nortal team and he has been also developing further the working models incl. scrum mastership role for the technical development.",
+    role: "Technology Director"
+  },
+  {
+    text: [
+        "Marko just might be the cleanest coder I have ever had the pleasure of knowing. Having worked with him for about a year, I have learned to really appreciate his drive to improving the maintainability and elegance of the code around and ahead of him. And: his approach is practical and supportive of others.",
+        "However, to me the greatest thing about him is that he is a team-first -kind of guy. He will accept responsibility of the team’s deliverables, can do any role (architect, coder, tester, scrum master) and do it well, will strive for perfecting the processes and Is always ready to help a team member in need. He is the kind of guy you really want in your team."
+      ],
+    role: "Entrepreneur"
+  },
+  {
+    text: "If you want an experienced software development professional in your team, look for guys like Marko. He is equipped with excellent technical skills and can handle any technical problem. Every team also needs members who want to create solutions with excellent quality and push team's technical standards forward. That's why me and other Marko's team members greatly appreciate his attitude of not being satisfied with mediocre results. Marko also is one the guys who is not only familiar with agile and lean ways of working but knows how to do it in practice. ",
+    role: "Product Manager"
+  },
+  {
+    text: "Marko's enthusiasm to clean code is unparalleled. But more importantly, Markos aura generates clean code around him. I owe him a great thanks for teaching me how to imagine code. It is not the syntax or the functions, but a poem which describes your intentions. With this in mind, I can write readable and robust code that every developer after me will understand. ",
+    role: "Senior Software Developer"
+  },
+  {
+    text: [
+        "Marko is a wonder-boy on what comes to Java and especially Spring! I had the honor to work with him for a year, and learned soooo much about the good practices what comes to keeping code in order and patterns in place.",
+        "Marko is an avid learner who manages to inspire others as well, as teach ways to become a better programmer. +10 would work with him again!"
+        ],
+    role: "CO-Founder"
+  },
+  {
+    text: "Marko is a hard working, analytical professional, and a pleasure to work with. His contribution to server system design and development has been invaluable. I will gladly recommend Marko for his software design, development, and communcational skills.",
+    role: "Founder"
   }
 ];
 
