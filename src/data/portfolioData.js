@@ -75,6 +75,13 @@ export const socialMedia = [
   { name: 'Email', icon: 'envelope', url: 'mailto:marko.andersson@gmail.com' }
 ];
 
+// Location information
+export const location = {
+  city: 'Jyväskylä',
+  country: 'Finland',
+  mapUrl: 'https://maps.google.com/?q=Jyväskylä,Finland'
+};
+
 // Career start year (constant)
 export const careerStartYear = 2007;
 

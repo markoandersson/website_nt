@@ -1,5 +1,6 @@
 ---
 // src/components/Hero.astro
+import { location } from '../data/portfolioData.js';
 
 export interface Props {
   socialMedia: {
@@ -38,13 +39,27 @@ const { socialMedia } = Astro.props;
     </div>
   </div>
   <div class="container mx-auto px-6 text-center">
-    <div class="flex md:justify-start justify-center pt-6 space-x-8">
-      {socialMedia.map(social => (
-          <a href={social.url} target="_blank" rel="noopener noreferrer" class="text-accent-light hover:text-accent-light transition duration-300">
-            <span class="sr-only">{social.name}</span>
-            <i class={`${social.icon === 'envelope' ? 'fa-solid' : 'fa-brands'} fa-${social.icon} text-4xl`} aria-hidden="true"></i>
-          </a>
-      ))}
+    <div class="flex flex-wrap md:justify-start justify-center pt-6 items-center">
+      <div class="flex space-x-8 mr-8 mb-4 md:mb-0">
+        {socialMedia.map(social => (
+            <a href={social.url} target="_blank" rel="noopener noreferrer" class="text-accent-light hover:text-accent-light transition duration-300">
+              <span class="sr-only">{social.name}</span>
+              <i class={`${social.icon === 'envelope' ? 'fa-solid' : 'fa-brands'} fa-${social.icon} text-4xl`} aria-hidden="true"></i>
+            </a>
+        ))}
+      </div>
+
+      <div class="flex items-center text-accent-light">
+          <i class="fa-solid fa-map-marker-alt text-3xl mr-2" aria-hidden="true"></i>
+        <a
+          href={location.mapUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center text-accent-light transition duration-300"
+        >
+          <span class="text-lg">{location.city}, {location.country}</span>
+        </a>
+      </div>
     </div>
   </div>
 </section>
