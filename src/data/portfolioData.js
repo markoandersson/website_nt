@@ -69,10 +69,10 @@ export const books = [
 
 // Social media links
 export const socialMedia = [
-  { name: 'GitHub', icon: 'github', url: 'https://github.com/yourusername' },
-  { name: 'LinkedIn', icon: 'linkedin', url: 'https://linkedin.com/in/yourusername' },
-  { name: 'Twitter', icon: 'twitter', url: 'https://twitter.com/yourusername' },
-  { name: 'Email', icon: 'envelope', url: 'mailto:your.email@example.com' }
+  { name: 'GitHub', icon: 'github', url: 'https://github.com/markoandersson' },
+  { name: 'LinkedIn', icon: 'linkedin', url: 'www.linkedin.com/in/markoandersson' },
+  { name: 'Twitter', icon: 'twitter', url: 'https://x.com/marko_andersson' },
+  { name: 'Email', icon: 'envelope', url: 'mailto:marko.andersson@gmail.com' }
 ];
 
 // Career start year (constant)
