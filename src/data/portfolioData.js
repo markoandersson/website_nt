@@ -13,7 +13,7 @@ export const projects = [
     dates: '2022 - 2025',
     company: 'Media company',
     tech: ['C#', '.NET Core', 'JavaScript', 'SQL Server'],
-    teamSize: '10+',
+    teamSize: 10,
     description: [
       `Contributed to the comprehensive rewrite of a legacy self-service platform in the media industry, working 
       within a system where multiple applications shared a single database. Advocated for to incorporate 
