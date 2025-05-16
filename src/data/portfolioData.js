@@ -9,25 +9,51 @@ export const keyExpertise = [
 // Project details
 export const projects = [
   {
-    title: 'Project Alpha',
-    dates: '2021 - 2023',
-    company: 'Example Corp',
-    tech: ['Java', 'Spring Boot', 'React', 'PostgreSQL'],
-    description: 'Led the development of a major web application, focusing on backend architecture and migrating legacy components.'
+    title: 'Digital Media Platform Modernization',
+    dates: '2022 - 2025',
+    company: 'Media company',
+    tech: ['C#', '.NET Core', 'JavaScript', 'SQL Server'],
+    teamSize: '10+',
+    description: [
+      `Contributed to the comprehensive rewrite of a legacy self-service platform in the media industry, working 
+      within a system where multiple applications shared a single database. Advocated for to incorporate 
+      domain-aligned architecture principles within the chosen implementation path. 
+      Established comprehensive API-to-database integration test harnesses for my components that enabled 
+      confident feature development.`,
+
+      `Implemented the automated CI/CD pipelines for the legacy application using Azure DevOps, transforming 
+      from manual to automated deployments and enabling more frequent, smaller releases. Suggesting practical 
+      improvements to team dynamics, including establishing shared sprint goals and limiting work-in-progress 
+      within my areas of influence.`,
+
+      `Facilitated planning sessions with stakeholders to better align priorities before development began when 
+      possible. Provided technical guidance to team members, demonstrating clean code practices and domain-driven 
+      design principles through practical examples in my contributions.`,
+
+      `Focused on understanding the business domain deeply to ensure my technical solutions aligned with real user 
+      needs and business objectives. Balanced addressing technical debt with new feature development in my 
+      work areas, ensuring continuous delivery of business value despite the challenges of a large-scale rewrite. 
+      This project reflects my commitment to creating sustainable value through quality engineering practices, 
+      even when working within constraints of broader project decisions.`
+    ]
   },
   {
     title: 'System Modernization Beta',
     dates: '2019 - 2021',
     company: 'Another Inc.',
     tech: ['C#', '.NET Core', 'Azure', 'Angular'],
-    description: 'Key developer in a team effort to replace an outdated system with a modern, scalable solution using microservices.'
+    description: [
+      "Key developer in a team effort to replace an outdated system with a modern, scalable solution using microservices."
+    ]
   },
   {
     title: 'Project Gamma',
     dates: '2017 - 2019',
     company: 'Previous Solutions Ltd.',
     tech: ['Java', 'JavaScript', 'SQL Server'],
-    description: 'Developed and maintained features for a large-scale enterprise application, improving performance and stability.'
+    description: [
+      "Developed and maintained features for a large-scale enterprise application, improving performance and stability."
+    ]
   }
 ];
 

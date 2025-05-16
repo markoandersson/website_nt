@@ -7,7 +7,7 @@ export interface Props {
     company: string;
     dates: string;
     tech: string[];
-    description: string;
+    description: string | string[];
   }>;
 }
 
@@ -18,7 +18,7 @@ const { title, projects } = Astro.props;
   <h2 class="text-3xl font-bold text-center mb-12 text-accent-light">{title}</h2>
   <div class="space-y-12">
     {projects.map(project => (
-        <div class="bg-primary-medium p-6 rounded-lg shadow-lg">
+        <div class="project-card bg-primary-medium p-6 rounded-lg shadow-lg">
           <h3 class="text-2xl font-semibold mb-2 text-accent-light">{project.title}</h3>
           <div class="flex flex-wrap gap-x-4 gap-y-2 text-sm text-secondary mb-3">
             <span>{project.company}</span>
@@ -30,8 +30,31 @@ const { title, projects } = Astro.props;
                 <span class="bg-primary-light text-light text-xs font-semibold px-2.5 py-0.5 rounded">{t}</span>
             ))}
           </div>
-          <p class="text-light leading-relaxed">{project.description}</p>
+          {Array.isArray(project.description) ? (
+            <>
+              <p class="text-light leading-relaxed mb-4">{project.description[0]}</p>
+              {project.description.length > 1 && (
+                <>
+                  <div class="full-description overflow-hidden transition-all duration-500 ease-in-out" style="max-height: 0; opacity: 0;">
+                    <div class="pt-2">
+                      {project.description.slice(1).map((paragraph) => (
+                        <p class="text-light leading-relaxed mb-4">{paragraph}</p>
+                      ))}
+                    </div>
+                  </div>
+                  <button class="toggle-description flex items-center text-accent-light hover:text-accent-dark font-medium transition-colors duration-300 focus:outline-none mt-2">
+                    <span>Read more</span>
+                    <i class="fa-solid fa-chevron-down h-5 w-5 ml-1 transition-transform duration-300"></i>
+                  </button>
+                </>
+              )}
+            </>
+          ) : (
+            <p class="text-light leading-relaxed">{project.description}</p>
+          )}
         </div>
     ))}
   </div>
 </section>
+
+<script src="../scripts/projectCard.js"></script>
