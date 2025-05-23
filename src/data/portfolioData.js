@@ -10,16 +10,16 @@ export const keyExpertise = [
 export const projects = [
   {
     title: 'Digital Media Platform Modernization',
-    dates: '2022 - 2025',
-    company: 'Media company',
+    duration: 3,
+    client: 'Media company',
     tech: ['C#', '.NET Core', 'JavaScript', 'SQL Server'],
     teamSize: 10,
     description: [
-      `Contributed to the comprehensive rewrite of a legacy self-service platform in the media industry, working 
-      within a system where multiple applications shared a single database. Advocated for to incorporate 
-      domain-aligned architecture principles within the chosen implementation path. 
-      Established comprehensive API-to-database integration test harnesses for my components that enabled 
-      confident feature development.`,
+      `I participated in the modernization of a legacy self-service platform in the media industry, implementing CI/CD pipelines and 
+      establishing domain-aligned architecture principles. Designed and implemented integration between the legacy database 
+      system and a modern third-party SaaS service platform, enabling new capabilities while maintaining system stability. 
+      Created robust test harnesses that enabled confident feature development in a complex environment where multiple 
+      applications shared a single database.`,
 
       `Implemented the automated CI/CD pipelines for the legacy application using Azure DevOps, transforming 
       from manual to automated deployments and enabling more frequent, smaller releases. Suggesting practical 
@@ -34,27 +34,230 @@ export const projects = [
       needs and business objectives. Balanced addressing technical debt with new feature development in my 
       work areas, ensuring continuous delivery of business value despite the challenges of a large-scale rewrite. 
       This project reflects my commitment to creating sustainable value through quality engineering practices, 
-      even when working within constraints of broader project decisions.`
+      even when working within constraints of broader project decisions.`,
+
+      `Created a robust synchronization mechanism that allowed bidirectional data flow, effectively extending the legacy 
+      system's functionality without compromising its core operations. This integration opened up new possibilities for feature 
+      development while working within the constraints of the existing architecture.`
     ]
   },
   {
-    title: 'System Modernization Beta',
-    dates: '2019 - 2021',
-    company: 'Another Inc.',
-    tech: ['C#', '.NET Core', 'Azure', 'Angular'],
+    title: 'Product Lifecycle Management System',
+    duration: 1,
+    client: 'Multinational electric engineering company',
+    tech: ['Java', 'Spring', 'Mobile', 'Azure SQL'],
+    teamSize: 4,
     description: [
-      "Key developer in a team effort to replace an outdated system with a modern, scalable solution using microservices."
+      `Developed a comprehensive product lifecycle management system that streamlined the entire process of product changes, 
+      including Bill of Materials (BOM) management and structured review workflows. Created a robust Java/Spring backend 
+      and intuitive web UI, while also developing a companion mobile client that enabled field technicians to document 
+      investigations of damaged products with photos and evidence, significantly improving report quality and completeness.`,
+
+      `Implemented a detailed investigation module for damaged or malfunctioning products, allowing engineers to document 
+      findings and track resolution progress. The mobile client significantly improved the quality and completeness of field reports 
+      by providing real-time data collection capabilities.`,
+
+      `Designed an intuitive web UI for the main system that streamlined the review and approval workflows, making it easier 
+      for stakeholders to collaborate on product changes. Integrated document management capabilities to ensure all product 
+      specifications and change documentation were properly versioned and accessible.`,
+
+      `Mentored junior developers on the project, providing guidance on best practices in software development, code reviews, 
+      and architectural decisions. Established coding standards and documentation practices that improved overall code quality 
+      and team productivity.`
     ]
   },
   {
-    title: 'Project Gamma',
-    dates: '2017 - 2019',
-    company: 'Previous Solutions Ltd.',
-    tech: ['Java', 'JavaScript', 'SQL Server'],
+    title: 'High Security Government Project',
+    duration: 0.5,
+    client: 'Finnish government',
+    tech: ['Java', 'Spring', 'Python'],
+    teamSize: 5,
     description: [
-      "Developed and maintained features for a large-scale enterprise application, improving performance and stability."
+      `Enhanced a high-security system for the Finnish government that involved complex integrations with various 
+      government systems and third-party platforms. Established a more effective workflow for demoing the software 
+      directly to end-customers, which significantly improved feedback cycles and stakeholder satisfaction. Contributed 
+      innovative approaches for feature design and UI mocking while maintaining the paramount security and reliability 
+      requirements essential for government operations.`,
     ]
-  }
+  },
+  {
+    title: 'Sharepoint Application Modernization',
+    duration: 1,
+    client: 'Multinational electric engineering company',
+    tech: ['C#', '.NET Core', 'React', 'Sharepoint'],
+    teamSize: 3,
+    description: [
+      `Led the successful modernization of a legacy Sharepoint application by reimplementing outdated views with modern 
+      React components while porting selected C# code to .NET Core. This transformation significantly improved user experience, 
+      application responsiveness, and overall performance. Designed a clean architecture that separated frontend and backend 
+      concerns, making the system more maintainable and easier to extend while establishing automated testing practices to 
+      ensure feature parity.`,
+
+      `Carefully analyzed the existing codebase to identify components that could be reused and those that needed to be rebuilt, 
+      ensuring an efficient modernization process that preserved valuable legacy functionality while eliminating technical debt.`,
+
+      `Completely reimplemented the outdated Sharepoint views with modern React components, significantly improving 
+      the user experience and application responsiveness. The new architecture made the system more maintainable and easier to extend.`,
+
+      `Established automated testing practices that ensured the modernized application maintained feature parity with 
+      the legacy system while enabling safer future enhancements. Worked closely with the client to prioritize features 
+      and deliver incremental value throughout the modernization process.`
+    ]
+  },
+  {
+    title: 'Order Tracking System',
+    duration: 2.5,
+    client: 'Multinational electric engineering company',
+    tech: ['Java', 'Spring', 'Azure SQL', 'Azure'],
+    teamSize: 3,
+    description: [
+      `Led the end-to-end development of a cloud-native order tracking system with worldwide usage, from initial sales 
+      and requirements gathering to final delivery. The system allowed customers to track orders in real-time and receive 
+      status notifications through a responsive UI. As scrum master, implemented an innovative approach where customers 
+      directly tried the software in test environments during weekly demos, creating high trust and earning recognition 
+      from the client.`,
+
+      `Created a robust integration layer to pull data from the legacy internal order management system that previously 
+      couldn't provide data to external users. Architected the solution to run entirely in Azure, leveraging cloud services 
+      for scalability, reliability, and global accessibility.`,
+
+      `Implemented a secure data synchronization mechanism that protected sensitive information while providing customers 
+      with the details they needed. Advocated for and implemented DevOps practices, setting up continuous integration and 
+      delivery pipelines that enabled frequent, reliable deployments.`,
+
+      `Collaborated with UX designers to create an intuitive interface that received positive feedback from international users. 
+      The weekly demo approach where customers directly tried the software in the test environment, instead of us presenting 
+      finished features, created high trust between the client and the team and resulted in recognition for this innovative 
+      project management approach.`
+    ]
+  },
+  {
+    title: 'PIM to Webshop Integration',
+    duration: 0.5,
+    client: 'Finnish retail company',
+    tech: ['JavaScript', 'AWS Lambda', 'Node.js', 'Cloud'],
+    teamSize: 9,
+    description: [
+      `Designed and implemented a serverless, cloud-native integration between a legacy Product Information Management (PIM) 
+      system and a new webshop frontend using JavaScript and AWS Lambda. Created robust data transformation services that 
+      normalized and enriched product data while implementing optimized caching strategies to ensure fast response times 
+      and efficient resource utilization in the cloud environment.`,
+
+      `Developed a seamless data flow between the systems that enabled the modern webshop to access and display product 
+      information from the legacy PIM system without requiring major changes to either system. The serverless architecture 
+      provided cost-effective scaling to handle varying loads.`,
+
+      `Collaborated closely with both the PIM team and frontend developers to ensure the integration met all requirements 
+      and provided a consistent user experience. Established monitoring and alerting for the serverless functions to ensure 
+      reliability and quick response to any issues in the production environment.`
+    ]
+  },
+  {
+    title: 'Transportation Management System',
+    dates: '2014 - 2018',
+    duration: 3.5,
+    client: 'Technology and services company',
+    tech: ['Java', 'Spring', 'SQL Server'],
+    teamSize: 8,
+    description: [
+      `Led the critical technical effort to separate an established transportation management system into two distinct 
+      software solutions following an organizational demerger. Successfully established API specifications and coordinated 
+      development efforts between two companies, ensuring seamless integration and data flow while maintaining data integrity 
+      and functionality. Implemented highly praised features that significantly improved user experience and operational 
+      efficiency in the logistics domain.`,
+
+      `Managed the complex challenge of maintaining system functionality during the separation process, creating a detailed 
+      migration plan that minimized disruption to business operations. The API specifications created became the foundation 
+      for ongoing collaboration between the two companies.`,
+
+      `Applied clean code practices and test-driven development to ensure high-quality, maintainable code. Collaborated closely 
+      with stakeholders to understand business requirements and translate them into technical solutions that addressed real 
+      user needs in the logistics domain.`
+    ]
+  },
+  {
+    title: 'Multiplayer Game Communication Servers',
+    duration: 2.5,
+    client: 'Finnish game studio',
+    tech: ['Java','Spring', 'JMS', 'Cassandra', 'Vaadin', 'REST'],
+    teamSize: 3,
+    description: [
+      `Architected and built pioneering high-performance communication servers for multiplayer mobile games that enabled 
+      real-time interaction between millions of game clients. This custom solution, developed before such functionality 
+      became commonplace via Unity and cloud services, included a complete ecosystem with CMS for game developers, 
+      JMS-based messaging, clustered Cassandra databases for scalability, and comprehensive monitoring systems that 
+      maintained 99.9% uptime for mission-critical gaming infrastructure.`,
+
+      `Created a CMS system for game developers to modify, synchronize, and publish game-related data to test and 
+      production databases. This significantly streamlined the game development workflow and reduced time-to-market 
+      for new game features and updates.`,
+
+      `Implemented an enterprise communication system based on JMS (Java Message Service) to ensure reliable message 
+      delivery between system components. Developed server monitoring and controlling systems to maintain high 
+      availability and performance.`,
+
+      `Built data collection mechanisms and visualization tools to present historical performance data, enabling proactive 
+      system optimization. Designed and implemented various REST interfaces for client applications, optimizing data 
+      access with clustered Cassandra databases for high scalability.`,
+
+      `Created user interfaces using Vaadin framework for internal tools and administration panels. Introduced strong 
+      unit and integration testing practices to the team, significantly improving code quality and reducing errors in 
+      the mission-critical back-end servers. Led project teams and mentored other developers in best practices for 
+      high-performance server development.`
+    ]
+  },
+  {
+    title: 'Test Data Generation Utility',
+    duration: 1.25,
+    client: 'Finnish energy meter manufacturer',
+    tech: ['SQL'],
+    teamSize: 1,
+    description: [
+      `Developed a sophisticated test data generation framework for energy meter systems that significantly reduced 
+      test setup time and improved test coverage by simulating diverse energy consumption patterns, meter readings, 
+      and customer scenarios. As the first consultant on the project, delivered such exceptional value that the client 
+      expanded their consulting engagement. The solution maintained complex referential integrity and business rules 
+      while creating realistic test scenarios that helped identify critical issues before production deployment.`,
+
+      `Designed the framework with flexibility in mind, allowing testers to easily configure different test scenarios 
+      without requiring deep technical knowledge of the underlying database structure. This democratized testing and 
+      enabled more thorough validation of system behavior under diverse conditions.`,
+
+      `Developed utilities to clean up generated test data after test execution, ensuring the test environment 
+      remained in a consistent state between test runs. Created documentation and training materials to help the 
+      testing team effectively utilize the data generation tools.`,
+
+      `Worked closely with quality assurance teams to understand their testing requirements and continuously 
+      improved the data generation utility based on their feedback. The solution significantly reduced the time 
+      required to set up test scenarios and improved test coverage across the application.`
+    ]
+  },
+  {
+    title: 'Certificate Management System',
+    duration: 4.5,
+    client: 'Finnish telecom company',
+    tech: ['Java', 'Spring', 'Microsoft Active Directory'],
+    teamSize: 4,
+    description: [
+      `Designed and developed a secure certificate management system for a Finnish telecom company that simplified 
+      complex PKI operations while maintaining rigorous security standards. The system handled the complete lifecycle 
+      of CA certificates—managing, signing, revoking, and listing—with robust Microsoft Active Directory integration 
+      for authentication and comprehensive audit logging for compliance. Created intuitive interfaces that made certificate 
+      management accessible to non-technical users while automating workflows to reduce manual errors.`,
+
+      `Enhanced an existing custom configuration management system before participating in creating a completely new 
+      system based on the existing platform. The new system significantly improved security compliance and operational 
+      efficiency for the telecom company's certificate management processes.`,
+
+      `Developed robust integration with Microsoft Active Directory for secure user authentication and authorization, 
+      ensuring that only authorized personnel could access sensitive certificate operations. Implemented comprehensive 
+      logging and audit trails to maintain security compliance and traceability of all certificate-related actions.`,
+
+      `Collaborated closely with security experts to ensure the system adhered to industry standards and best 
+      practices for public key infrastructure (PKI). Participated in code reviews and security audits to maintain 
+      the highest level of security throughout the development lifecycle.`
+    ]
+  },
 ];
 
 export const booksRead = 20
@@ -202,15 +405,19 @@ export const getAmountOfProjects = () => projects.length;
 // Technology to icon mapping
 const technologyIcons = {
   'Java': { name: 'java', type: 'brands' },
+  'Spring': { name: 'leaf', type: 'solid' },
   'Spring Boot': { name: 'leaf', type: 'solid' },
   'React': { name: 'react', type: 'brands' },
   'PostgreSQL': { name: 'database', type: 'solid' },
   'C#': { name: 'code', type: 'solid' },
   '.NET Core': { name: 'microsoft', type: 'brands' },
   'Azure': { name: 'cloud', type: 'solid' },
+  'Azure SQL': { name: 'database', type: 'solid' },
   'Angular': { name: 'angular', type: 'brands' },
   'JavaScript': { name: 'js', type: 'brands' },
   'SQL Server': { name: 'database', type: 'solid' },
+  'Sharepoint': { name: 'file-alt', type: 'solid' },
+  'Python': { name: 'python', type: 'brands' },
   // Add more mappings as needed
 };
 
