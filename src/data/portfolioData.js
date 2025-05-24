@@ -267,7 +267,7 @@ export const books = [
   {
     title: 'Clean Code',
     authors: ['Robert C. Martin'],
-    coverImage: 'https://m.media-amazon.com/images/I/41xShlnTZTL._SX376_BO1,204,203,200_.jpg',
+    coverImage: 'https://covers.openlibrary.org/b/isbn/0132350882-M.jpg',
     description: 'A handbook of agile software craftsmanship that has helped me write better, more maintainable code.'
   },
   {
@@ -285,7 +285,7 @@ export const books = [
   {
     title: 'Refactoring',
     authors: ['Martin Fowler'],
-    coverImage: 'https://m.media-amazon.com/images/I/41odjJlPgHL._SX400_BO1,204,203,200_.jpg',
+    coverImage: 'https://covers.openlibrary.org/b/id/8507565-M.jpg',
     description: 'Improving the design of existing code - essential techniques for maintaining software.'
   },
   {
@@ -293,6 +293,66 @@ export const books = [
     authors: ['Eric Evans'],
     coverImage: 'https://m.media-amazon.com/images/I/51sZW87slRL._SX375_BO1,204,203,200_.jpg',
     description: 'Tackling complexity in the heart of software - changed how I approach complex business domains.'
+  },
+  {
+    title: 'Fixing your Scrum',
+    authors: ['Ryan Ripley', 'Todd Miller'],
+    coverImage: 'https://m.media-amazon.com/images/I/81uzgGwB4IL._SY385_.jpg',
+    description: 'Practical solutions to common Scrum problems - helps teams improve their Scrum implementation.'
+  },
+  {
+    title: 'The Phoenix Project',
+    authors: ['Gene Kim'],
+    coverImage: 'https://covers.openlibrary.org/b/id/8090274-M.jpg',
+    description: 'A novel about IT, DevOps, and helping your business win - illustrates the principles of DevOps through storytelling.'
+  },
+  {
+    title: 'The Unicorn Project',
+    authors: ['Gene Kim'],
+    coverImage: 'https://m.media-amazon.com/images/I/81+LIauOzgL._SL1500_.jpg',
+    description: 'A novel about developers, digital disruption, and thriving in the age of data - explores the DevOps movement from a developer perspective.'
+  },
+  {
+    title: 'Accelerate',
+    authors: ['Nicole Forsgren'],
+    coverImage: 'https://m.media-amazon.com/images/I/71AQO6nzuNL._AC_UY218_.jpg',
+    description: 'The science of lean software and DevOps - building and scaling high performing technology organizations.'
+  },
+  {
+    title: 'User Story Mapping',
+    authors: ['Jeff Patton'],
+    coverImage: 'https://m.media-amazon.com/images/I/91al9Hr4eML._AC_UY218_.jpg',
+    description: 'Discover the whole story, build the right product - a practical guide to user story mapping for better product development.'
+  },
+  {
+    title: 'Working Effectively with Unit Tests',
+    authors: ['Jay Fields'],
+    coverImage: 'https://m.media-amazon.com/images/I/71BPywSSN4L._AC_UY218_.jpg',
+    description: 'A guide to writing maintainable and effective unit tests that improve code quality.'
+  },
+  {
+    title: 'Working Effectively with Legacy Code',
+    authors: ['Michael C. Feathers'],
+    coverImage: 'https://m.media-amazon.com/images/I/51EgCCLOWxL._SX376_BO1,204,203,200_.jpg',
+    description: 'Strategies and techniques for dealing with large, untested legacy code bases and bringing them under test.'
+  },
+  {
+    title: 'Clean Coder',
+    authors: ['Robert C. Martin'],
+    coverImage: 'https://m.media-amazon.com/images/I/51uO-K+V5dL._SX381_BO1,204,203,200_.jpg',
+    description: 'A code of conduct for professional programmers - focuses on the disciplines, techniques, and practices of professional software developers.'
+  },
+  {
+    title: 'The Art of Visualising Software Architecture',
+    authors: ['Simon Brown'],
+    coverImage: 'https://m.media-amazon.com/images/I/51RoTsXEziL.jpg',
+    description: 'A practical approach to creating diagrams for software architecture and design - helps communicate software architecture effectively.'
+  },
+  {
+    title: 'Team Topologies',
+    authors: ['Matthew Skelton'],
+    coverImage: 'https://m.media-amazon.com/images/I/71rXZdLZunL._AC_UY218_.jpg',
+    description: 'Organizing business and technology teams for fast flow - a practical guide to designing team structures for effective software delivery.'
   }
 ];
 
