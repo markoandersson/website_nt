@@ -343,12 +343,6 @@ export const books = [
     description: 'A code of conduct for professional programmers - focuses on the disciplines, techniques, and practices of professional software developers.'
   },
   {
-    title: 'The Art of Visualising Software Architecture',
-    authors: ['Simon Brown'],
-    coverImage: 'https://m.media-amazon.com/images/I/51RoTsXEziL.jpg',
-    description: 'A practical approach to creating diagrams for software architecture and design - helps communicate software architecture effectively.'
-  },
-  {
     title: 'Team Topologies',
     authors: ['Matthew Skelton'],
     coverImage: 'https://m.media-amazon.com/images/I/71rXZdLZunL._AC_UY218_.jpg',
