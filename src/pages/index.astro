@@ -8,8 +8,10 @@ import AboutMe from '../components/AboutMe.astro';
 import Hero from '../components/Hero.astro';
 import Footer from '../components/Footer.astro';
 import Manifesto from '../components/Manifesto.astro';
+import HowICanHelp from '../components/HowICanHelp.astro';
 import { 
   keyExpertise, 
+  howICanHelp,
   projects, 
   books,
   socialMedia, 
@@ -50,6 +52,11 @@ const technologies = getTechnologies();
         yearsExperience={yearsExperience}
         booksRead={booksRead}
         amountOfProjects={amountOfProjects}
+      />
+
+      <HowICanHelp 
+        title="How I Can Help?"
+        howICanHelp={howICanHelp}
       />
 
       <Manifesto title="My Manifesto" manifesto={manifesto} principles={principles} />

@@ -1,9 +1,75 @@
 // Key expertise areas
 export const keyExpertise = [
   { name: 'Web Application Development', details: 'Java/Spring, C#/.NET Core, JavaScript' },
-  { name: 'Legacy Code Replacement & Modernization', details: 'Strategizing and executing migrations' },
-  { name: 'Pragmatic Agile Methodologies', details: 'Focus on effective development flow' },
+  { name: 'Modern Software Development', details: 'Clean code, TDD, DevOps, CI/CD pipelines' },
+  { name: 'Caring about the Legacy', details: 'Appreciating, improving, and evolving existing systems' },
+  { name: 'Pragmatic Agile Methodologies', details: 'Focus on effective development flow and customer centricity' },
+  { name: 'Leveling Up the Team', details: 'Mentoring, knowledge sharing, code reviews' },
   { name: 'AI in Software Development', details: 'Exploring and utilizing AI tools' }
+];
+
+// How I can help data
+export const howICanHelp = [
+  { 
+    name: 'Legacy System Modernization & Evolution', 
+    details: 'Iterative improvement, strategic refactoring, safe evolution of critical systems',
+    benefits: [
+      'Reduce technical debt without disrupting business operations',
+      'Extend the lifespan of valuable legacy systems',
+      'Gradually introduce modern practices and technologies',
+      'Minimize risk through incremental changes'
+    ]
+  },
+  { 
+    name: 'Software Craftsmanship & Quality Engineering', 
+    details: 'Clean code, TDD, DevOps, CI/CD pipelines, automated testing',
+    benefits: [
+      'Improve maintainability and reduce long-term costs',
+      'Increase development velocity through quality practices',
+      'Reduce bugs and production incidents',
+      'Build systems that can evolve with changing requirements'
+    ]
+  },
+  { 
+    name: 'System Integration & API Design', 
+    details: 'Designing seamless integrations between legacy and modern systems',
+    benefits: [
+      'Connect disparate systems to unlock new capabilities',
+      'Create robust data flows between applications',
+      'Design APIs that are both powerful and developer-friendly',
+      'Enable digital transformation while preserving existing investments'
+    ]
+  },
+  { 
+    name: 'Technical Leadership', 
+    details: 'Project leadership, technical direction, scrum mastery',
+    benefits: [
+      'Guide teams toward effective technical solutions',
+      'Mentor developers and raise overall code quality',
+      'Facilitate communication between technical and business stakeholders',
+      'Implement pragmatic agile practices tailored to your team'
+    ]
+  },
+  { 
+    name: 'Domain-Driven Design', 
+    details: 'Aligning technical solutions with business domains',
+    benefits: [
+      'Create software that directly reflects your business processes',
+      'Improve communication between developers and domain experts',
+      'Build flexible systems that can adapt to business changes',
+      'Reduce translation errors between requirements and implementation'
+    ]
+  },
+  { 
+    name: 'Cloud-Native Architecture', 
+    details: 'Azure, AWS, serverless architectures, scalable solutions',
+    benefits: [
+      'Design systems that scale with your business needs',
+      'Reduce infrastructure costs through optimized cloud usage',
+      'Implement resilient architectures with high availability',
+      'Leverage modern cloud services to accelerate development'
+    ]
+  }
 ];
 
 // Project details
@@ -260,7 +326,7 @@ export const projects = [
   },
 ];
 
-export const booksRead = 20
+export const booksRead = 80
 
 // Books that have influenced me
 export const books = [
