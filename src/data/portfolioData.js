@@ -223,22 +223,24 @@ export const projects = [
     dates: '2014 - 2018',
     duration: 3.5,
     client: 'Technology and services company',
-    tech: ['Java', 'Spring', 'SQL Server'],
+    tech: ['Java', 'Spring', 'JavaScript', 'SQL Server'],
     teamSize: 8,
     description: [
-      `Led the critical technical effort to separate an established transportation management system into two distinct 
-      software solutions following an organizational demerger. Successfully established API specifications and coordinated 
+      `Participated in the development and improvement of established transportation management system. Successfully established API 
+      specifications and coordinated 
       development efforts between two companies, ensuring seamless integration and data flow while maintaining data integrity 
       and functionality. Implemented highly praised features that significantly improved user experience and operational 
       efficiency in the logistics domain.`,
 
-      `Managed the complex challenge of maintaining system functionality during the separation process, creating a detailed 
-      migration plan that minimized disruption to business operations. The API specifications created became the foundation 
-      for ongoing collaboration between the two companies.`,
-
       `Applied clean code practices and test-driven development to ensure high-quality, maintainable code. Collaborated closely 
       with stakeholders to understand business requirements and translate them into technical solutions that addressed real 
-      user needs in the logistics domain.`
+      user needs in the logistics domain.`,
+
+      `Participated in planning steps to modernize and simplify the existing system that had become too complex over time. 
+      The system had accumulated numerous features over the years without removing unused ones, leading to maintenance challenges 
+      and decreased development velocity. Our team analyzed usage patterns, identified obsolete features, and created a phased 
+      approach to streamline the system while maintaining critical functionality. This modernization initiative improved system 
+      performance, reduced maintenance costs, and enhanced the overall user experience.`
     ]
   },
   {
@@ -248,7 +250,7 @@ export const projects = [
     tech: ['Java','Spring', 'JMS', 'Cassandra', 'Vaadin', 'REST'],
     teamSize: 3,
     description: [
-      `Architected and built pioneering high-performance communication servers for multiplayer mobile games that enabled 
+      `Participated architecting and building pioneering high-performance communication servers for multiplayer mobile games that enabled 
       real-time interaction between millions of game clients. This custom solution, developed before such functionality 
       became commonplace via Unity and cloud services, included a complete ecosystem with CMS for game developers, 
       JMS-based messaging, clustered Cassandra databases for scalability, and comprehensive monitoring systems that 
@@ -305,10 +307,10 @@ export const projects = [
     tech: ['Java', 'Spring', 'Microsoft Active Directory'],
     teamSize: 4,
     description: [
-      `Designed and developed a secure certificate management system for a Finnish telecom company that simplified 
-      complex PKI operations while maintaining rigorous security standards. The system handled the complete lifecycle 
-      of CA certificates—managing, signing, revoking, and listing—with robust Microsoft Active Directory integration 
-      for authentication and comprehensive audit logging for compliance. Created intuitive interfaces that made certificate 
+      `Participated of developing a secure certificate management system for a Finnish telecom company that simplified 
+      complex PKI operations while maintaining security standards. The system handled the complete lifecycle 
+      of CA certificates—managing, signing, revoking, and listing—with Microsoft Active Directory integration 
+      and comprehensive audit logging for compliance. Created intuitive interfaces that made certificate 
       management accessible to non-technical users while automating workflows to reduce manual errors.`,
 
       `Enhanced an existing custom configuration management system before participating in creating a completely new 
