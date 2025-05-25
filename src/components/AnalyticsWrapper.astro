@@ -1,0 +1,44 @@
+---
+/**
+ * AnalyticsWrapper Component
+ * 
+ * A wrapper component that adds Google Analytics tracking to any component.
+ * It tracks when the component becomes visible in the viewport and how long it remains visible.
+ */
+
+export interface Props {
+  componentId: string;
+  componentName: string;
+  threshold?: number;
+  timeInterval?: number;
+}
+
+const { 
+  componentId, 
+  componentName, 
+  threshold = 0.5, 
+  timeInterval = 5000 
+} = Astro.props;
+---
+
+<div id={componentId} class="analytics-wrapper">
+  <slot />
+</div>
+
+<script define:vars={{ componentId, componentName, threshold, timeInterval }}>
+  import { trackComponentVisibility } from '../scripts/analyticsTracker.js';
+  
+  // Wait for the DOM to be fully loaded
+  document.addEventListener('DOMContentLoaded', () => {
+    // Get the component element
+    const element = document.getElementById(componentId);
+    
+    if (element) {
+      // Initialize tracking for this component
+      trackComponentVisibility(componentId, componentName, element, {
+        threshold,
+        timeInterval
+      });
+    }
+  });
+</script>

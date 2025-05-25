@@ -9,6 +9,7 @@ import Hero from '../components/Hero.astro';
 import Footer from '../components/Footer.astro';
 import Manifesto from '../components/Manifesto.astro';
 import HowICanHelp from '../components/HowICanHelp.astro';
+import AnalyticsWrapper from '../components/AnalyticsWrapper.astro';
 import { 
   keyExpertise, 
   howICanHelp,
@@ -39,35 +40,53 @@ const technologies = getTechnologies();
   <div class="bg-primary-dark text-primary min-h-screen font-sans">
 
     <main class="container mx-auto px-6 py-12">
-      <Hero socialMedia={socialMedia} />
+      <AnalyticsWrapper componentId="hero-section" componentName="Hero">
+        <Hero socialMedia={socialMedia} />
+      </AnalyticsWrapper>
     </main>
 
-    <Technology technologies={technologies} />
+    <AnalyticsWrapper componentId="technology-section" componentName="Technology">
+      <Technology technologies={technologies} />
+    </AnalyticsWrapper>
 
     <main class="container mx-auto px-6 py-12">
 
-      <AboutMe 
-        title="About Me & Expertise"
-        keyExpertise={keyExpertise}
-        yearsExperience={yearsExperience}
-        booksRead={booksRead}
-        amountOfProjects={amountOfProjects}
-      />
+      <AnalyticsWrapper componentId="about-me-section" componentName="AboutMe">
+        <AboutMe 
+          title="About Me & Expertise"
+          keyExpertise={keyExpertise}
+          yearsExperience={yearsExperience}
+          booksRead={booksRead}
+          amountOfProjects={amountOfProjects}
+        />
+      </AnalyticsWrapper>
 
-      <HowICanHelp 
-        title="How I Can Help?"
-        howICanHelp={howICanHelp}
-      />
+      <AnalyticsWrapper componentId="how-i-can-help-section" componentName="HowICanHelp">
+        <HowICanHelp 
+          title="How I Can Help?"
+          howICanHelp={howICanHelp}
+        />
+      </AnalyticsWrapper>
 
-      <Manifesto title="My Manifesto" manifesto={manifesto} principles={principles} />
+      <AnalyticsWrapper componentId="manifesto-section" componentName="Manifesto">
+        <Manifesto title="My Manifesto" manifesto={manifesto} principles={principles} />
+      </AnalyticsWrapper>
 
-      <Testimonials title="What People Say" testimonials={testimonials} />
+      <AnalyticsWrapper componentId="testimonials-section" componentName="Testimonials">
+        <Testimonials title="What People Say" testimonials={testimonials} />
+      </AnalyticsWrapper>
 
-      <Projects title="Featured Projects" projects={projects} />
+      <AnalyticsWrapper componentId="projects-section" componentName="Projects">
+        <Projects title="Featured Projects" projects={projects} />
+      </AnalyticsWrapper>
 
-      <Books title="Books That Influenced Me" books={books} />
+      <AnalyticsWrapper componentId="books-section" componentName="Books">
+        <Books title="Books That Influenced Me" books={books} />
+      </AnalyticsWrapper>
     </main>
 
-    <Footer />
+    <AnalyticsWrapper componentId="footer-section" componentName="Footer">
+      <Footer />
+    </AnalyticsWrapper>
   </div>
 </Layout>
