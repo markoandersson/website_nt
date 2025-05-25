@@ -10,7 +10,7 @@ export default defineConfig({
   output: 'static',
 
   // Site configuration
-  site: 'https://markoandersson.github.io', // Replace with your GitHub username or custom domain
+  site: 'https://markoandersson.info', // Replace with your GitHub username or custom domain
 
   // Build options
   build: {
