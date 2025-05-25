@@ -421,7 +421,7 @@ export const books = [
 // Social media links
 export const socialMedia = [
   { name: 'GitHub', icon: 'github', url: 'https://github.com/markoandersson' },
-  { name: 'LinkedIn', icon: 'linkedin', url: 'https://www.linkedin.com/in/markoandersson' },
+  { name: 'LinkedIn', icon: 'linkedin', url: 'www.linkedin.com/in/markoandersson' },
   { name: 'Twitter', icon: 'twitter', url: 'https://x.com/marko_andersson' },
   { name: 'Email', icon: 'envelope', url: 'mailto:marko.andersson@gmail.com' }
 ];
