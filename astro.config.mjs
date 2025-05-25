@@ -4,7 +4,6 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
   // Base path for GitHub Pages deployment
-  base: '/website_nt',
 
   // Output as static site for both GitHub Pages and Netlify
   output: 'static',
