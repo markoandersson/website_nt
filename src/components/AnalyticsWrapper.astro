@@ -25,14 +25,14 @@ const {
   <slot />
 </div>
 
-<script define:vars={{ componentId, componentName, threshold, timeInterval }}>
-  import { trackComponentVisibility } from '../scripts/analyticsTracker.js';
-  
+<script type="module" define:vars={{ componentId, componentName, threshold, timeInterval }}>
+  import { trackComponentVisibility } from '/scripts/analyticsTracker.js';
+
   // Wait for the DOM to be fully loaded
   document.addEventListener('DOMContentLoaded', () => {
     // Get the component element
     const element = document.getElementById(componentId);
-    
+
     if (element) {
       // Initialize tracking for this component
       trackComponentVisibility(componentId, componentName, element, {
