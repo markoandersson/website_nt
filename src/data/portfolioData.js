@@ -10,18 +10,8 @@ export const keyExpertise = [
 
 // How I can help data
 export const howICanHelp = [
-  { 
-    name: 'Legacy System Modernization & Evolution', 
-    details: 'Iterative improvement, strategic refactoring, safe evolution of critical systems',
-    benefits: [
-      'Reduce technical debt without disrupting business operations',
-      'Extend the lifespan of valuable legacy systems',
-      'Gradually introduce modern practices and technologies',
-      'Minimize risk through incremental changes'
-    ]
-  },
-  { 
-    name: 'Software Craftsmanship & Quality Engineering', 
+  {
+    name: 'Facing high maintenance costs and frequent bugs in your software?',
     details: 'Clean code, TDD, DevOps, CI/CD pipelines, automated testing',
     benefits: [
       'Improve maintainability and reduce long-term costs',
@@ -30,8 +20,18 @@ export const howICanHelp = [
       'Build systems that can evolve with changing requirements'
     ]
   },
-  { 
-    name: 'System Integration & API Design', 
+  {
+    name: 'Struggling with slow development in your legacy system?', 
+    details: 'Iterative improvement, strategic refactoring, safe evolution of critical systems',
+    benefits: [
+      'Reduce technical debt without disrupting business operations',
+      'Extend the lifespan of valuable legacy systems',
+      'Gradually introduce modern practices and technologies',
+      'Minimize risk through incremental changes'
+    ]
+  },
+  {
+    name: 'Need to connect disparate systems that don\'t talk to each other?', 
     details: 'Designing seamless integrations between legacy and modern systems',
     benefits: [
       'Connect disparate systems to unlock new capabilities',
@@ -40,18 +40,8 @@ export const howICanHelp = [
       'Enable digital transformation while preserving existing investments'
     ]
   },
-  { 
-    name: 'Technical Leadership', 
-    details: 'Project leadership, technical direction, scrum mastery',
-    benefits: [
-      'Guide teams toward effective technical solutions',
-      'Mentor developers and raise overall code quality',
-      'Facilitate communication between technical and business stakeholders',
-      'Implement pragmatic agile practices tailored to your team'
-    ]
-  },
-  { 
-    name: 'Domain-Driven Design', 
+  {
+    name: 'Do your developers struggle to understand your business needs?',
     details: 'Aligning technical solutions with business domains',
     benefits: [
       'Create software that directly reflects your business processes',
@@ -60,14 +50,46 @@ export const howICanHelp = [
       'Reduce translation errors between requirements and implementation'
     ]
   },
-  { 
-    name: 'Cloud-Native Architecture', 
+  {
+    name: 'Are your internal tools lagging behind your external systems?',
+    details: 'Internal process automation, workflow optimization, employee experience',
+    benefits: [
+      'Reduce manual workload with streamlined internal tools',
+      'Align internal and external systems for consistent experience',
+      'Reduce cross team friction with better internal processes',
+      'Improve employee productivity and satisfaction',
+      'Create clear processes and automation for repetitive tasks'
+    ]
+  },
+  {
+    name: 'Is your development team lacking direction or struggling with delivery?',
+    details: 'Project leadership, technical direction, scrum mastery',
+    benefits: [
+      'Guide teams toward effective technical solutions',
+      'Mentor developers and raise overall code quality',
+      'Facilitate communication between technical and business stakeholders',
+      'Implement pragmatic agile practices tailored to your team'
+    ]
+  },
+  {
+    name: 'Is your infrastructure struggling to scale with growing demands?', 
     details: 'Azure, AWS, serverless architectures, scalable solutions',
     benefits: [
       'Design systems that scale with your business needs',
       'Reduce infrastructure costs through optimized cloud usage',
       'Implement resilient architectures with high availability',
       'Leverage modern cloud services to accelerate development'
+    ]
+  },
+  {
+    name: 'Is your team overwhelmed with meetings and knowledge silos?',
+    details: 'Team collaboration, knowledge sharing, workflow optimization, prioritization techniques',
+    benefits: [
+      'Reduce meeting overload with more effective collaboration methods',
+      'Break down knowledge silos through systematic documentation and pair programming',
+      'Implement prioritization frameworks to focus on high-value work',
+      'Create sustainable workload management to prevent burnout',
+      'Establish clear communication channels that respect focus time'
     ]
   }
 ];
