@@ -11,7 +11,7 @@ export const keyExpertise = [
 // How I can help data
 export const howICanHelp = [
   {
-    name: 'Facing high maintenance costs and frequent bugs in your software?',
+    name: 'Are you facing high maintenance costs and frequent bugs in your software?',
     details: 'Clean code, TDD, DevOps, CI/CD pipelines, automated testing',
     benefits: [
       'Improve maintainability and reduce long-term costs',
@@ -21,7 +21,7 @@ export const howICanHelp = [
     ]
   },
   {
-    name: 'Struggling with slow development in your legacy system?', 
+    name: 'Is the team struggling with slow development in your legacy system?',
     details: 'Iterative improvement, strategic refactoring, safe evolution of critical systems',
     benefits: [
       'Reduce technical debt without disrupting business operations',
@@ -31,13 +31,24 @@ export const howICanHelp = [
     ]
   },
   {
-    name: 'Need to connect disparate systems that don\'t talk to each other?', 
+    name: 'Need to connect disparate systems that don\'t talk to each other?',
     details: 'Designing seamless integrations between legacy and modern systems',
     benefits: [
       'Connect disparate systems to unlock new capabilities',
       'Create robust data flows between applications',
       'Design APIs that are both powerful and developer-friendly',
       'Enable digital transformation while preserving existing investments'
+    ]
+  },
+  {
+    name: 'Does business struggle to get value out of the old system? Is the development speed insufficient?',
+    details: 'Legacy system modernization, incremental improvement, value-driven development',
+    benefits: [
+      'Extract more business value from existing systems without complete rewrites',
+      'Increase development velocity through targeted improvements',
+      'Identify and eliminate bottlenecks in the development process',
+      'Prioritize features that deliver the most value to users',
+      'Limit work-in-progress to improve focus and delivery speed'
     ]
   },
   {
@@ -59,6 +70,17 @@ export const howICanHelp = [
       'Reduce cross team friction with better internal processes',
       'Improve employee productivity and satisfaction',
       'Create clear processes and automation for repetitive tasks'
+    ]
+  },
+  {
+    name: 'Is your software built on outdated technology that\'s losing support?',
+    details: 'System rearchitecting, technology modernization, incremental migration strategies',
+    benefits: [
+      'Reduce risk through phased migration approach',
+      'Preserve business value while updating technical foundations',
+      'Improve maintainability and future-proof your systems',
+      'Enable access to modern tools, frameworks, and security updates',
+      'Attract and retain developer talent with current technologies'
     ]
   },
   {
@@ -90,6 +112,27 @@ export const howICanHelp = [
       'Implement prioritization frameworks to focus on high-value work',
       'Create sustainable workload management to prevent burnout',
       'Establish clear communication channels that respect focus time'
+    ]
+  },
+  {
+    name: 'Are manual tasks slowing down your team and creating inconsistencies?',
+    details: 'Process automation, workflow optimization, tooling improvements, AI integration',
+    benefits: [
+      'Eliminate human errors and inconsistencies in routine processes',
+      'Free up team capacity for higher-value creative work',
+      'Use AI tools to automate tasks requiring human decision making in limited context',
+      'Improve team satisfaction by removing tedious work'
+    ]
+  },
+  {
+    name: 'Do you need new features but your legacy system wasn\'t designed to be extended?',
+    details: 'Seam-based architecture, data interception, non-invasive service integration, transparent feature implementation',
+    benefits: [
+      'Implement new features without modifying the core legacy system',
+      'Intercept data at system boundaries (database, messaging, APIs) to add functionality invisibly',
+      'Reduce risk by keeping the original system unaware of new service components',
+      'Enable gradual modernization while maintaining full business continuity',
+      'Use modern technologies for new features while preserving legacy investments'
     ]
   }
 ];
