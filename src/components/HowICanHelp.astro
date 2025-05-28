@@ -23,11 +23,15 @@ const yearsOfExperience = calculateYearsExperience();
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
     {howICanHelp.map(item => (
-      <div class="bg-primary-medium p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-        <h3 class="text-xl font-semibold text-accent-light mb-3">{item.name}</h3>
-        <p class="text-secondary mb-4">{item.details}</p>
-        <button class="text-accent-light hover:underline mb-2 see-benefits-btn">See benefits</button>
-        <div class="benefits-content hidden">
+      <div class="bg-primary-medium p-3 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
+        <button class="chevron-row chevron-btn flex items-center justify-between cursor-pointer w-full text-left focus:outline-none" aria-label="Show details">
+          <span class="text-xl font-semibold text-accent-light">{item.name}</span>
+          <span class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-primary-dark transition-colors duration-200">
+            <i class="fa-solid fa-chevron-right text-accent-light text-lg transition-transform duration-300"></i>
+          </span>
+        </button>
+        <div class="benefits-content hidden mt-3">
+          <p class="text-secondary mb-4">{item.details}</p>
           <h4 class="text-lg font-medium text-accent-light mb-2">Benefits:</h4>
           <ul class="list-disc list-inside text-secondary space-y-1">
             {item.benefits.map(benefit => (
@@ -42,24 +46,27 @@ const yearsOfExperience = calculateYearsExperience();
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    const benefitButtons = document.querySelectorAll('.see-benefits-btn');
+    const chevronButtons = document.querySelectorAll('.chevron-btn');
 
-    benefitButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        // Find the parent card and the benefits content within it
-        const card = button.closest('div');
+    chevronButtons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const card = button.closest('div.bg-primary-medium');
         const benefitsContent = card.querySelector('.benefits-content');
+        const chevronIcon = button.querySelector('i');
 
         // Toggle visibility
         benefitsContent.classList.toggle('hidden');
-
-        // Update button text
-        if (benefitsContent.classList.contains('hidden')) {
-          button.textContent = 'See benefits';
-        } else {
-          button.textContent = 'Hide benefits';
-        }
+        // Rotate chevron if open
+        chevronIcon.classList.toggle('rotate-90', !benefitsContent.classList.contains('hidden'));
       });
     });
   });
 </script>
+
+<style>
+  /* Add a smooth rotation for the chevron */
+  .rotate-90 {
+    transform: rotate(90deg);
+  }
+</style>

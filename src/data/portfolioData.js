@@ -42,7 +42,7 @@ export const howICanHelp = [
   },
   {
     name: 'Does business struggle to get value out of the old system? Is the development speed insufficient?',
-    details: 'Legacy system modernization, incremental improvement, value-driven development',
+    details: 'Legacy system modernization, incremental improvement, value-driven development, prioritization',
     benefits: [
       'Extract more business value from existing systems without complete rewrites',
       'Increase development velocity through targeted improvements',
@@ -52,11 +52,11 @@ export const howICanHelp = [
     ]
   },
   {
-    name: 'Do your developers struggle to understand your business needs?',
-    details: 'Aligning technical solutions with business domains',
+    name: 'Does your developers struggle to understand your business needs?',
+    details: 'Aligning developers with business goals, domain-driven design, effective communication',
     benefits: [
       'Create software that directly reflects your business processes',
-      'Improve communication between developers and domain experts',
+      'Foster collaboration between developers and domain experts',
       'Build flexible systems that can adapt to business changes',
       'Reduce translation errors between requirements and implementation'
     ]
@@ -74,27 +74,31 @@ export const howICanHelp = [
   },
   {
     name: 'Is your software built on outdated technology that\'s losing support?',
-    details: 'System rearchitecting, technology modernization, incremental migration strategies',
+    details: 'System rearchitecting, technology modernization, incremental migration strategies, version upgrades',
     benefits: [
       'Reduce risk through phased migration approach',
       'Preserve business value while updating technical foundations',
       'Improve maintainability and future-proof your systems',
       'Enable access to modern tools, frameworks, and security updates',
-      'Attract and retain developer talent with current technologies'
+      'Attract and retain developer talent with current technologies',
+      'Reduce technical debt by replacing outdated components',
+      'Reduce security risks by updating to supported versions'
     ]
   },
   {
     name: 'Is your development team lacking direction or struggling with delivery?',
-    details: 'Project leadership, technical direction, scrum mastery',
+    details: 'Project leadership, technical direction, scrum mastery, prioritization',
     benefits: [
-      'Guide teams toward effective technical solutions',
+      'Provide clear technical direction and project leadership',
+      'Product thinking instead of feature thinking',
+      'User-centric development that focuses on solving real user problems',
       'Mentor developers and raise overall code quality',
       'Facilitate communication between technical and business stakeholders',
       'Implement pragmatic agile practices tailored to your team'
     ]
   },
   {
-    name: 'Is your infrastructure struggling to scale with growing demands?', 
+    name: 'Is your infrastructure struggling to scale with growing demands?',
     details: 'Azure, AWS, serverless architectures, scalable solutions',
     benefits: [
       'Design systems that scale with your business needs',
@@ -108,10 +112,12 @@ export const howICanHelp = [
     details: 'Team collaboration, knowledge sharing, workflow optimization, prioritization techniques',
     benefits: [
       'Reduce meeting overload with more effective collaboration methods',
+      'Improve collaboration between developers and business stakeholders to ensure alignment',
+      'Right people are in the right meetings',
       'Break down knowledge silos through systematic documentation and pair programming',
       'Implement prioritization frameworks to focus on high-value work',
       'Create sustainable workload management to prevent burnout',
-      'Establish clear communication channels that respect focus time'
+      'Improve team morale and productivity by fostering a culture of shared ownership'
     ]
   },
   {
@@ -125,7 +131,7 @@ export const howICanHelp = [
     ]
   },
   {
-    name: 'Do you need new features but your legacy system wasn\'t designed to be extended?',
+    name: 'Do you need new features but your legacy system cannot be changed?',
     details: 'Seam-based architecture, data interception, non-invasive service integration, transparent feature implementation',
     benefits: [
       'Implement new features without modifying the core legacy system',
@@ -133,6 +139,54 @@ export const howICanHelp = [
       'Reduce risk by keeping the original system unaware of new service components',
       'Enable gradual modernization while maintaining full business continuity',
       'Use modern technologies for new features while preserving legacy investments'
+    ]
+  },
+  {
+    name: 'Is your team waiting for other teams to deliver before they can start?',
+    details: 'Cross-team collaboration, dependency management, prioritization, team topologies, and workflow optimization',
+    benefits: [
+      'Identify and manage dependencies to reduce bottlenecks',
+      'Implement prioritization techniques to focus on high-value work',
+      'Foster collaboration between teams to improve delivery speed',
+      'Teams own their own work and are not waiting for others to deliver',
+    ]
+  },
+  {
+    name: 'Is your backlog full of features that never get delivered?',
+    details: 'Backlog management, prioritization, user story mapping, value-driven development',
+    benefits: [
+      'Prioritize features that deliver real user value',
+      'Working with one or few high-impact items at a time',
+      'Predictable delivery of features that matter to users',
+      'Implement user story mapping to visualize and prioritize work',
+      'Reduce backlog clutter by focusing on high-impact items',
+      'Align development efforts with business goals and user needs',
+      'Create a clear roadmap for delivering valuable features incrementally'
+    ]
+  },
+  {
+    name: 'Are your features always late and never meet expectations?',
+    details: 'Iterative development, user story mapping, prioritization, value-driven development',
+    benefits: [
+      'Deliver features incrementally to gather feedback early',
+      'Deliver working features in small, manageable increments',
+      'Compromise less important features to deliver on time',
+      'Align development with user needs and business goals',
+      'Reduce risk by validating assumptions before full implementation',
+      'Create a culture of continuous improvement and learning',
+      'Improve predictability of feature delivery through iterative cycles',
+      'Focus on delivering value rather than just completing tasks'
+    ]
+  },
+  {
+    name: "Or are you just looking for extra hands on your project?",
+    details: 'Short-term project support, team augmentation, specialized expertise',
+    benefits: [
+      'Quickly scale your team with experienced developer',
+      'Bring in specialized skills for specific project needs',
+      'Maintain project momentum with additional resources',
+      'Increase certain mindset and skills in your team',
+      'Produce value from the first week',
     ]
   }
 ];
