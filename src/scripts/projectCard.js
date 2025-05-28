@@ -1,40 +1,36 @@
-/**
- * projectCard.js
- * This file contains JavaScript functions for project card functionality
- */
+import { sendAnalyticsEvent } from '../utils/analytics.js';
 
-// Function to setup project card description toggle
-function setupProjectCardToggle() {
+document.addEventListener('DOMContentLoaded', function() {
   const toggleButtons = document.querySelectorAll('.toggle-description');
-
+  
   toggleButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const projectCard = button.closest('.project-card');
-      const fullDescription = projectCard.querySelector('.full-description');
-      const arrowIcon = button.querySelector('i');
-      const buttonText = button.querySelector('span');
-      const isExpanded = fullDescription.classList.contains('expanded');
-
-      if (isExpanded) {
-        // Collapse
-        fullDescription.style.maxHeight = '0';
-        fullDescription.style.opacity = '0';
-        fullDescription.classList.remove('expanded');
-        buttonText.textContent = 'Read more';
-        arrowIcon.style.transform = 'rotate(0deg)';
+    button.addEventListener('click', function() {
+      const projectCard = this.closest('.project-card');
+      const description = projectCard.querySelector('.full-description');
+      const icon = this.querySelector('i');
+      const buttonText = this.querySelector('span');
+      const projectTitle = projectCard.querySelector('h3').textContent;
+      
+      const isExpanded = description.style.maxHeight !== '0px' && description.style.maxHeight !== '';
+      
+      // Toggle the expanded state
+      if (!isExpanded) {
+        description.style.maxHeight = description.scrollHeight + 'px';
+        description.style.opacity = '1';
+        buttonText.textContent = 'Read less';
+        icon.classList.add('fa-rotate-180');
+        
+        // Send analytics event when expanding
+        sendAnalyticsEvent('project_expanded', {
+          project_title: projectTitle,
+          section: 'projects'
+        });
       } else {
-        // Expand
-        fullDescription.style.maxHeight = fullDescription.scrollHeight + 'px';
-        fullDescription.style.opacity = '1';
-        fullDescription.classList.add('expanded');
-        buttonText.textContent = 'Show less';
-        arrowIcon.style.transform = 'rotate(180deg)';
+        description.style.maxHeight = '0';
+        description.style.opacity = '0';
+        buttonText.textContent = 'Read more';
+        icon.classList.remove('fa-rotate-180');
       }
     });
   });
-}
-
-// Initialize project card toggle functionality when the DOM is fully loaded
-document.addEventListener('DOMContentLoaded', () => {
-  setupProjectCardToggle();
 });

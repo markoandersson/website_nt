@@ -24,7 +24,7 @@ const yearsOfExperience = calculateYearsExperience();
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
     {howICanHelp.map(item => (
       <div class="bg-primary-medium p-3 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
-        <button class="chevron-row chevron-btn flex items-center justify-between cursor-pointer w-full text-left focus:outline-none" aria-label="Show details">
+        <button class="chevron-row chevron-btn flex items-center justify-between cursor-pointer w-full text-left focus:outline-none" aria-label="Show details" data-title={item.name}>
           <span class="text-xl font-semibold text-accent-light">{item.name}</span>
           <span class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-primary-dark transition-colors duration-200">
             <i class="fa-solid fa-chevron-right text-accent-light text-lg transition-transform duration-300"></i>
@@ -45,6 +45,8 @@ const yearsOfExperience = calculateYearsExperience();
 </section>
 
 <script>
+  import { sendAnalyticsEvent } from '../utils/analytics.js';
+
   document.addEventListener('DOMContentLoaded', () => {
     const chevronButtons = document.querySelectorAll('.chevron-btn');
 
@@ -54,11 +56,22 @@ const yearsOfExperience = calculateYearsExperience();
         const card = button.closest('div.bg-primary-medium');
         const benefitsContent = card.querySelector('.benefits-content');
         const chevronIcon = button.querySelector('i');
+        const cardTitle = button.getAttribute('data-title');
 
         // Toggle visibility
+        const isExpanding = benefitsContent.classList.contains('hidden');
         benefitsContent.classList.toggle('hidden');
+        
         // Rotate chevron if open
-        chevronIcon.classList.toggle('rotate-90', !benefitsContent.classList.contains('hidden'));
+        chevronIcon.classList.toggle('rotate-90', isExpanding);
+        
+        // Send analytics event when expanding
+        if (isExpanding) {
+          sendAnalyticsEvent('help_card_expanded', {
+            card_title: cardTitle,
+            section: 'how_i_can_help'
+          });
+        }
       });
     });
   });
