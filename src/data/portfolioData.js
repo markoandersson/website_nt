@@ -1,10 +1,11 @@
 // Key expertise areas
 export const keyExpertise = [
   { name: 'Web Application Development', details: 'Java/Spring, C#/.NET Core, JavaScript' },
-  { name: 'Modern Software Development', details: 'Clean code, TDD, DevOps, CI/CD pipelines' },
+  { name: 'Cloud native', details: 'Azure, AWS' },
+  { name: 'Modern Software Development', details: 'Clean code, TDD, DevOps, CI/CD' },
   { name: 'Caring about the Legacy', details: 'Appreciating, improving, and evolving existing systems' },
   { name: 'Pragmatic Agile Methodologies', details: 'Focus on effective development flow and customer centricity' },
-  { name: 'Leveling Up the Team', details: 'Mentoring, knowledge sharing, code reviews' },
+  { name: 'Leveling Up the Team', details: 'Mentoring, knowledge sharing, pairing, code reviews' },
   { name: 'AI in Software Development', details: 'Exploring and utilizing AI tools' }
 ];
 
@@ -197,7 +198,7 @@ export const projects = [
     title: 'Digital Media Platform Modernization',
     duration: 3,
     client: 'Media company',
-    tech: ['C#', '.NET Core', 'JavaScript', 'SQL Server'],
+    tech: ['C#', '.NET Core', 'Azure', 'JavaScript', 'SQL Server'],
     teamSize: 10,
     description: [
       `I participated in the modernization of a legacy self-service platform in the media industry, implementing CI/CD pipelines and 
@@ -230,7 +231,7 @@ export const projects = [
     title: 'Product Lifecycle Management System',
     duration: 1,
     client: 'Multinational electric engineering company',
-    tech: ['Java', 'Spring', 'Mobile', 'Azure SQL'],
+    tech: ['Java', 'Spring', 'Azure', 'Azure SQL'],
     teamSize: 4,
     description: [
       `Developed a comprehensive product lifecycle management system that streamlined the entire process of product changes, 
@@ -260,16 +261,15 @@ export const projects = [
     description: [
       `Enhanced a high-security system for the Finnish government that involved complex integrations with various 
       government systems and third-party platforms. Established a more effective workflow for demoing the software 
-      directly to end-customers, which significantly improved feedback cycles and stakeholder satisfaction. Contributed 
-      innovative approaches for feature design and UI mocking while maintaining the paramount security and reliability 
-      requirements essential for government operations.`,
+      directly to end-customers, which significantly improved feedback cycles and stakeholder satisfaction.  
+      Improved feature design using UI sketches and mocking to design UI features with stakeholders.`,
     ]
   },
   {
     title: 'Sharepoint Application Modernization',
     duration: 1,
     client: 'Multinational electric engineering company',
-    tech: ['C#', '.NET Core', 'React', 'Sharepoint'],
+    tech: ['C#', '.NET Core', 'React', 'Azure,', 'Sharepoint'],
     teamSize: 3,
     description: [
       `Led the successful modernization of a legacy Sharepoint application by reimplementing outdated views with modern 
@@ -293,7 +293,7 @@ export const projects = [
     title: 'Order Tracking System',
     duration: 2.5,
     client: 'Multinational electric engineering company',
-    tech: ['Java', 'Spring', 'Azure SQL', 'Azure'],
+    tech: ['Java', 'Spring', 'Azure', 'Azure SQL'],
     teamSize: 3,
     description: [
       `Led the end-to-end development of a cloud-native order tracking system with worldwide usage, from initial sales 
@@ -320,7 +320,7 @@ export const projects = [
     title: 'PIM to Webshop Integration',
     duration: 0.5,
     client: 'Finnish retail company',
-    tech: ['JavaScript', 'AWS Lambda', 'Node.js', 'Cloud'],
+    tech: ['JavaScript', 'AWS Lambda', 'Node.js', 'AWS'],
     teamSize: 9,
     description: [
       `Designed and implemented a serverless, cloud-native integration between a legacy Product Information Management (PIM) 
@@ -342,7 +342,7 @@ export const projects = [
     dates: '2014 - 2018',
     duration: 3.5,
     client: 'Technology and services company',
-    tech: ['Java', 'Spring', 'JavaScript', 'SQL Server'],
+    tech: ['Java', 'Spring', 'JavaScript', 'SQL Server', 'Azure'],
     teamSize: 8,
     description: [
       `Participated in the development and improvement of established transportation management system. Successfully established API 
@@ -396,7 +396,7 @@ export const projects = [
   {
     title: 'Test Data Generation Utility',
     duration: 1.25,
-    client: 'Finnish energy meter manufacturer',
+    client: 'Energy meter manufacturer',
     tech: ['SQL'],
     teamSize: 1,
     description: [
@@ -422,7 +422,7 @@ export const projects = [
   {
     title: 'Certificate Management System',
     duration: 4.5,
-    client: 'Finnish telecom company',
+    client: 'Nordic telecom company',
     tech: ['Java', 'Spring', 'Microsoft Active Directory'],
     teamSize: 4,
     description: [
