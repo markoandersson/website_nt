@@ -1,7 +1,7 @@
 // Key expertise areas
 export const keyExpertise = [
-  { name: 'Web Application Development', details: 'Java/Spring, C#/.NET Core, JavaScript' },
-  { name: 'Cloud native', details: 'Azure, AWS' },
+  { name: 'Building Web Applications', details: 'Java/Spring, C#/.NET Core, JavaScript' },
+  { name: 'Cloud native solutions', details: 'Azure, AWS' },
   { name: 'Modern Software Development', details: 'Clean code, Constant feedback, TDD, DevOps, CI/CD' },
   { name: 'Caring about the Legacy', details: 'Appreciating, improving, and evolving existing systems' },
   { name: 'Pragmatic Agile Methodologies', details: 'Focus on principles instead of practices' },
@@ -12,44 +12,42 @@ export const keyExpertise = [
 // How I can help data
 export const howICanHelp = [
   {
-    name: 'Are you facing high maintenance costs and frequent bugs in your software?',
+    name: 'Struggling with high maintenance costs or recurring bugs?',
     details: 'Clean code, TDD, DevOps, CI/CD pipelines, automated testing',
     benefits: [
-      'Improve maintainability and reduce long-term costs',
-      'Increase development velocity through quality practices',
-      'Reduce bugs and production incidents',
-      'Build systems that can evolve with changing requirements'
+      'Reduce long-term costs and improve maintainability.',
+      'Accelerate development with proven quality practices.',
+      'Minimize bugs and production incidents.',
+      'Build adaptable systems ready for future needs.'
     ]
   },
   {
-    name: 'Is the team struggling with slow development in your legacy system?',
+    name: 'Is legacy code slowing your team\'s progress?',
     details: 'Iterative improvement, strategic refactoring, safe evolution of critical systems',
     benefits: [
-      'Reduce technical debt without disrupting business operations',
-      'Extend the lifespan of valuable legacy systems',
-      'Gradually introduce modern practices and technologies',
-      'Minimize risk through incremental changes'
+      'Lower technical debt without business disruption.',
+      'Extend the life and value of your legacy systems.',
+      'Introduce modern practices incrementally and safely.',
+      'Mitigate risk through step-by-step improvements.'
     ]
   },
   {
-    name: 'Need to connect disparate systems that don\'t talk to each other?',
+    name: 'Need seamless integration between old and new systems?',
     details: 'Designing seamless integrations between legacy and modern systems',
     benefits: [
-      'Connect disparate systems to unlock new capabilities',
-      'Create robust data flows between applications',
-      'Design APIs that are both powerful and developer-friendly',
-      'Enable digital transformation while preserving existing investments'
+      'Unlock new capabilities by connecting your systems.',
+      'Enable robust data flows and efficient APIs.',
+      'Drive digital transformation while preserving investments.'
     ]
   },
   {
-    name: 'Does business struggle to get value out of the old system? Is the development speed insufficient?',
+    name: 'Not getting enough value or speed from your existing systems?',
     details: 'Legacy system modernization, incremental improvement, value-driven development, prioritization',
     benefits: [
-      'Extract more business value from existing systems without complete rewrites',
-      'Increase development velocity through targeted improvements',
-      'Identify and eliminate bottlenecks in the development process',
-      'Prioritize features that deliver the most value to users',
-      'Limit work-in-progress to improve focus and delivery speed'
+      'Extract more business value without a full rewrite.',
+      'Boost development speed with targeted improvements.',
+      'Remove bottlenecks and prioritize high-impact features.',
+      'Increase focus and delivery speed by limiting work-in-progress.'
     ]
   },
   {
@@ -198,39 +196,41 @@ export const projects = [
     title: 'Digital Media Platform Modernization',
     duration: 3,
     client: 'Media company',
+    role: 'Lead/Senior Developer',
     tech: ['C#', '.NET Core', 'Azure', 'JavaScript', 'SQL Server'],
     teamSize: 10,
-    description: [
-      `I participated in the modernization of a legacy self-service platform in the media industry, implementing CI/CD pipelines and 
-      establishing domain-aligned architecture principles. Designed and implemented integration between the legacy database 
-      system and a modern third-party SaaS service platform, enabling new capabilities while maintaining system stability. 
-      Created robust test harnesses that enabled confident feature development in a complex environment where multiple 
+   description: [
+      `As a senior developer, I contributed to modernizing a legacy self-service platform in the media industry. I implemented CI/CD pipelines and 
+      helped establish domain-aligned architecture principles. My role included designing and implementing integration between the legacy database
+      system and a modern third-party SaaS service platform, which enabled new capabilities while maintaining system stability.
+      I created robust test harnesses that supported confident feature development in a complex environment where multiple
       applications shared a single database.`,
 
-      `Implemented the automated CI/CD pipelines for the legacy application using Azure DevOps, transforming 
-      from manual to automated deployments and enabling more frequent, smaller releases. Suggesting practical 
-      improvements to team dynamics, including establishing shared sprint goals and limiting work-in-progress 
+      `I set up automated CI/CD pipelines for the legacy application using Azure DevOps, helping transform
+      the process from manual to automated deployments and enabling more frequent, smaller releases. I suggested practical
+      improvements to team dynamics, such as establishing shared sprint goals and limiting work-in-progress
       within my areas of influence.`,
 
-      `Facilitated planning sessions with stakeholders to better align priorities before development began when 
-      possible. Provided technical guidance to team members, demonstrating clean code practices and domain-driven 
+      `I participated in planning sessions with stakeholders to better align priorities before development began when
+      possible. I provided technical guidance to team members, demonstrating clean code practices and domain-driven
       design principles through practical examples in my contributions.`,
 
-      `Focused on understanding the business domain deeply to ensure my technical solutions aligned with real user 
-      needs and business objectives. Balanced addressing technical debt with new feature development in my 
-      work areas, ensuring continuous delivery of business value despite the challenges of a large-scale rewrite. 
-      This project reflects my commitment to creating sustainable value through quality engineering practices, 
+      `I focused on deeply understanding the business domain to ensure my technical solutions aligned with real user
+      needs and business objectives. I balanced addressing technical debt with new feature development in my
+      work areas, ensuring continuous delivery of business value despite the challenges of a large-scale rewrite.
+      This project demonstrates my commitment to creating sustainable value through quality engineering practices,
       even when working within constraints of broader project decisions.`,
 
-      `Created a robust synchronization mechanism that allowed bidirectional data flow, effectively extending the legacy 
-      system's functionality without compromising its core operations. This integration opened up new possibilities for feature 
-      development while working within the constraints of the existing architecture.`
+      `I iteratively reimplemented old stored procedure logic as C# code by incrementally moving the SQL to the C# project
+      and then refactoring it to EF Core queries and C# logic, all while maintaining the working system. The partial rewrite
+      was secured with extensive blackbox and integration tests to ensure reliability and business continuity.`
     ]
   },
   {
     title: 'Product Lifecycle Management System',
     duration: 1,
     client: 'Multinational electric engineering company',
+    role: 'Lead Developer',
     tech: ['Java', 'Spring', 'Azure', 'Azure SQL'],
     teamSize: 4,
     description: [
@@ -256,6 +256,7 @@ export const projects = [
     title: 'High Security Government Project',
     duration: 0.5,
     client: 'Finnish government',
+    role: 'Senior Developer',
     tech: ['Java', 'Spring', 'Python'],
     teamSize: 5,
     description: [
@@ -269,6 +270,7 @@ export const projects = [
     title: 'Sharepoint Application Modernization',
     duration: 1,
     client: 'Multinational electric engineering company',
+    role: 'Lead Developer',
     tech: ['C#', '.NET Core', 'React', 'Azure,', 'Sharepoint'],
     teamSize: 3,
     description: [
@@ -293,6 +295,7 @@ export const projects = [
     title: 'Order Tracking System',
     duration: 2.5,
     client: 'Multinational electric engineering company',
+    role: 'Lead Developer & Scrum Master',
     tech: ['Java', 'Spring', 'Azure', 'Azure SQL'],
     teamSize: 3,
     description: [
@@ -320,6 +323,7 @@ export const projects = [
     title: 'PIM to Webshop Integration',
     duration: 0.5,
     client: 'Finnish retail company',
+    role: 'Senior Developer',
     tech: ['JavaScript', 'AWS Lambda', 'Node.js', 'AWS'],
     teamSize: 9,
     description: [
@@ -342,6 +346,7 @@ export const projects = [
     dates: '2014 - 2018',
     duration: 3.5,
     client: 'Technology and services company',
+    role: 'Senior Developer',
     tech: ['Java', 'Spring', 'JavaScript', 'SQL Server', 'Azure'],
     teamSize: 8,
     description: [
@@ -366,6 +371,7 @@ export const projects = [
     title: 'Multiplayer Game Communication Servers',
     duration: 2.5,
     client: 'Finnish game studio',
+    role: 'Senior Developer',
     tech: ['Java','Spring', 'JMS', 'Cassandra', 'Vaadin', 'REST'],
     teamSize: 3,
     description: [
@@ -397,6 +403,7 @@ export const projects = [
     title: 'Test Data Generation Utility',
     duration: 1.25,
     client: 'Energy meter manufacturer',
+    role: 'Development Consultant',
     tech: ['SQL'],
     teamSize: 1,
     description: [
@@ -423,6 +430,7 @@ export const projects = [
     title: 'Certificate Management System',
     duration: 4.5,
     client: 'Nordic telecom company',
+    role: 'Software Developer',
     tech: ['Java', 'Spring', 'Microsoft Active Directory'],
     teamSize: 4,
     description: [
