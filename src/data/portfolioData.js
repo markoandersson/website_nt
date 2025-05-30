@@ -2,9 +2,9 @@
 export const keyExpertise = [
   { name: 'Web Application Development', details: 'Java/Spring, C#/.NET Core, JavaScript' },
   { name: 'Cloud native', details: 'Azure, AWS' },
-  { name: 'Modern Software Development', details: 'Clean code, TDD, DevOps, CI/CD' },
+  { name: 'Modern Software Development', details: 'Clean code, Constant feedback, TDD, DevOps, CI/CD' },
   { name: 'Caring about the Legacy', details: 'Appreciating, improving, and evolving existing systems' },
-  { name: 'Pragmatic Agile Methodologies', details: 'Focus on effective development flow and customer centricity' },
+  { name: 'Pragmatic Agile Methodologies', details: 'Focus on principles instead of practices' },
   { name: 'Leveling Up the Team', details: 'Mentoring, knowledge sharing, pairing, code reviews' },
   { name: 'AI in Software Development', details: 'Exploring and utilizing AI tools' }
 ];
@@ -611,13 +611,14 @@ export const testimonials = [
 
 // Manifesto and principles data
 export const manifesto = [
-  { id: 1, boldText: "Sustainable solutions", regularText: "over quick fixes" },
-  { id: 2, boldText: "Understanding root causes", regularText: "over treating symptoms" },
-  { id: 3, boldText: "System thinking", regularText: "over isolated optimizations" },
-  { id: 4, boldText: "People collaboration", regularText: "over siloed expertise" },
-  { id: 5, boldText: "Adapting to new insights", regularText: "over following the initial plan" },
-  { id: 6, boldText: "Iterative evolution of legacy systems", regularText: "over immediate, high-risk rewrites" },
-  { id: 7, boldText: "Customer-centric problem solving", regularText: "over blindly implementing feature lists" },
+  { boldText: "Sustainable solutions", regularText: "over quick fixes" },
+  { boldText: "Context-driven problem solving", regularText: "over universal methodologies" },
+  { boldText: "Adapting to new insights", regularText: "over following the initial plan" },
+  { boldText: "System thinking", regularText: "over isolated optimizations" },
+  { boldText: "Customer-centric problem solving", regularText: "over implementing feature lists" },
+  { boldText: "People collaboration", regularText: "over siloed expertise" },
+  { boldText: "Understanding root causes", regularText: "over treating symptoms" },
+  { boldText: "Iterative evolution of legacy systems", regularText: "over immediate, high-risk rewrites" },
 ];
 
 export const principles = [
