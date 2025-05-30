@@ -230,20 +230,20 @@ export const projects = [
     title: 'Product Lifecycle Management System',
     duration: 1,
     client: 'Multinational electric engineering company',
-    role: 'Lead Developer',
+    role: 'Lead Developer & Mentor',
     tech: ['Java', 'Spring', 'Azure', 'Azure SQL'],
     teamSize: 4,
     description: [
-      `Developed a comprehensive product lifecycle management system that streamlined the entire process of product changes, 
-      including Bill of Materials (BOM) management and structured review workflows. Created a robust Java/Spring backend 
-      and intuitive web UI, while also developing a companion mobile client that enabled field technicians to document 
-      investigations of damaged products with photos and evidence, significantly improving report quality and completeness.`,
+      `Developed a product lifecycle management system that streamlined the entire process of product changes, 
+      including Bill of Materials (BOM) management and structured review workflows. Created a Java/Spring backend 
+      and web UI, while also developing a companion mobile client that enabled field technicians to document 
+      investigations of damaged products with photos and evidence, significantly improving report quality.`,
 
       `Implemented a detailed investigation module for damaged or malfunctioning products, allowing engineers to document 
-      findings and track resolution progress. The mobile client significantly improved the quality and completeness of field reports 
+      findings and track resolution progress. The mobile client significantly improved the quality of field reports 
       by providing real-time data collection capabilities.`,
 
-      `Designed an intuitive web UI for the main system that streamlined the review and approval workflows, making it easier 
+      `Designed an web UI for the main system that streamlined the review and approval workflows, making it easier 
       for stakeholders to collaborate on product changes. Integrated document management capabilities to ensure all product 
       specifications and change documentation were properly versioned and accessible.`,
 
@@ -275,7 +275,7 @@ export const projects = [
     teamSize: 3,
     description: [
       `Led the successful modernization of a legacy Sharepoint application by reimplementing outdated views with modern 
-      React components while porting selected C# code to .NET Core. This transformation significantly improved user experience, 
+      React components while porting selected C# code to .NET Core. This transformation improved user experience, 
       application responsiveness, and overall performance. Designed a clean architecture that separated frontend and backend 
       concerns, making the system more maintainable and easier to extend while establishing automated testing practices to 
       ensure feature parity.`,
@@ -283,7 +283,7 @@ export const projects = [
       `Carefully analyzed the existing codebase to identify components that could be reused and those that needed to be rebuilt, 
       ensuring an efficient modernization process that preserved valuable legacy functionality while eliminating technical debt.`,
 
-      `Completely reimplemented the outdated Sharepoint views with modern React components, significantly improving 
+      `Completely reimplemented the outdated Sharepoint views with modern React components, improving 
       the user experience and application responsiveness. The new architecture made the system more maintainable and easier to extend.`,
 
       `Established automated testing practices that ensured the modernized application maintained feature parity with 
@@ -301,11 +301,11 @@ export const projects = [
     description: [
       `Led the end-to-end development of a cloud-native order tracking system with worldwide usage, from initial sales 
       and requirements gathering to final delivery. The system allowed customers to track orders in real-time and receive 
-      status notifications through a responsive UI. As scrum master, implemented an innovative approach where customers 
+      status notifications through a responsive UI. As scrum master, implemented an approach where customers 
       directly tried the software in test environments during weekly demos, creating high trust and earning recognition 
       from the client.`,
 
-      `Created a robust integration layer to pull data from the legacy internal order management system that previously 
+      `Created a integration layer to pull data from the legacy internal order management system that previously 
       couldn't provide data to external users. Architected the solution to run entirely in Azure, leveraging cloud services 
       for scalability, reliability, and global accessibility.`,
 
@@ -315,7 +315,7 @@ export const projects = [
 
       `Collaborated with UX designers to create an intuitive interface that received positive feedback from international users. 
       The weekly demo approach where customers directly tried the software in the test environment, instead of us presenting 
-      finished features, created high trust between the client and the team and resulted in recognition for this innovative 
+      finished features, created high trust between the client and the team and resulted in recognition for this  
       project management approach.`
     ]
   },
@@ -327,7 +327,7 @@ export const projects = [
     tech: ['JavaScript', 'AWS Lambda', 'Node.js', 'AWS'],
     teamSize: 9,
     description: [
-      `Designed and implemented a serverless, cloud-native integration between a legacy Product Information Management (PIM) 
+      `Helped to implement a serverless, cloud-native integration between a legacy Product Information Management (PIM) 
       system and a new webshop frontend using JavaScript and AWS Lambda. Created robust data transformation services that 
       normalized and enriched product data while implementing optimized caching strategies to ensure fast response times 
       and efficient resource utilization in the cloud environment.`,
@@ -343,7 +343,6 @@ export const projects = [
   },
   {
     title: 'Transportation Management System',
-    dates: '2014 - 2018',
     duration: 3.5,
     client: 'Technology and services company',
     role: 'Senior Developer',
@@ -376,7 +375,7 @@ export const projects = [
     teamSize: 3,
     description: [
       `Participated architecting and building pioneering high-performance communication servers for multiplayer mobile games that enabled 
-      real-time interaction between millions of game clients. This custom solution, developed before such functionality 
+      real-time interaction between game clients. This custom solution, developed before such functionality 
       became commonplace via Unity and cloud services, included a complete ecosystem with CMS for game developers, 
       JMS-based messaging, clustered Cassandra databases for scalability, and comprehensive monitoring systems that 
       maintained 99.9% uptime for mission-critical gaming infrastructure.`,
