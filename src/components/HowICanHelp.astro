@@ -21,16 +21,16 @@ const yearsOfExperience = calculateYearsExperience();
     With over {yearsOfExperience} years of experience in software development, I bring a pragmatic and sustainable approach to solving complex technical challenges. Here's how I might be able to help you:
   </p>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto auto-rows-max">
     {howICanHelp.map(item => (
-      <div class="bg-primary-medium p-3 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col">
+      <div class="bg-primary-medium p-3 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-fit">
         <button class="chevron-row chevron-btn flex items-center justify-between cursor-pointer w-full text-left focus:outline-none" aria-label="Show details" data-title={item.name}>
           <span class="text-xl font-semibold text-accent-light">{item.name}</span>
           <span class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-primary-dark transition-colors duration-200">
             <i class="fa-solid fa-chevron-right text-accent-light text-lg transition-transform duration-300"></i>
           </span>
         </button>
-        <div class="benefits-content hidden mt-3">
+        <div class="benefits-content collapsed mt-3 overflow-hidden transition-all duration-300 ease-out max-h-0">
           <p class="text-secondary mb-4">{item.details}</p>
           <h4 class="text-lg font-medium text-accent-light mb-2">Benefits:</h4>
           <ul class="list-disc list-inside text-secondary space-y-1">
@@ -58,13 +58,23 @@ const yearsOfExperience = calculateYearsExperience();
         const chevronIcon = button.querySelector('i');
         const cardTitle = button.getAttribute('data-title');
 
-        // Toggle visibility
-        const isExpanding = benefitsContent.classList.contains('hidden');
-        benefitsContent.classList.toggle('hidden');
-        
-        // Rotate chevron if open
+        // Toggle expansion state
+        const isExpanding = benefitsContent.classList.contains('collapsed');
+
+        if (isExpanding) {
+          // Expanding: set height to content height
+          const contentHeight = benefitsContent.scrollHeight;
+          benefitsContent.style.maxHeight = contentHeight + 'px';
+          benefitsContent.classList.remove('collapsed');
+        } else {
+          // Collapsing: animate to 0
+          benefitsContent.style.maxHeight = '0px';
+          benefitsContent.classList.add('collapsed');
+        }
+
+        // Rotate chevron
         chevronIcon.classList.toggle('rotate-90', isExpanding);
-        
+
         // Send analytics event when expanding
         if (isExpanding) {
           sendAnalyticsEvent('help_card_expanded', {
@@ -78,7 +88,14 @@ const yearsOfExperience = calculateYearsExperience();
 </script>
 
 <style>
-  /* Add a smooth rotation for the chevron */
+  .benefits-content {
+    max-height: 999px;
+  }
+
+  .benefits-content.collapsed {
+    max-height: 0;
+  }
+
   .rotate-90 {
     transform: rotate(90deg);
   }
