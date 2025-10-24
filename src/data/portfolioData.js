@@ -22,6 +22,18 @@ export const howICanHelp = [
     ]
   },
   {
+    name: 'Are your AI coding tools not delivering the promised productivity gains?',
+    details: 'Realistic AI capability assessment, code context documentation, process bottleneck identification, sustainable tool adoption',
+    benefits: [
+      'Set realistic expectations about what AI can and cannot do in software development',
+      'Understand that AI excels at code generation but doesn\'t know the \'why\' behind business decisions',
+      'Identify real bottlenecks in your development process beyond coding speed',
+      'Establish practices for preserving business context that AI needs but cannot create',
+      'Recognize that AI amplifies existing patterns - fix processes before expecting magic',
+      'Use AI tools strategically where they add value, not as a universal solution'
+    ]
+  },
+  {
     name: 'Is legacy code slowing your team\'s progress?',
     details: 'Iterative improvement, strategic refactoring, safe evolution of critical systems',
     benefits: [
