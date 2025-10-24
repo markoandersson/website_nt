@@ -54,5 +54,10 @@ coverage/
 .vercel/
 .output/
 
+# Claude Code related files
+CLAUDE.md
+.claude/
+claude.md
+
 # Misc
 Thumbs.db
