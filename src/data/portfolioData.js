@@ -1,69 +1,75 @@
+// Hero tagline and subtitle
+export const heroTagline = {
+  codeComment: "// TODO: Refactor the world, one legacy system at a time",
+  subtitle: "Bug detective 🔍 • Legacy whisperer • Code archaeologist"
+};
+
 // Key expertise areas
 export const keyExpertise = [
-  { name: 'Building Web Applications', details: 'Java/Spring, C#/.NET Core, JavaScript' },
-  { name: 'Cloud native solutions', details: 'Azure, AWS' },
+  { name: 'Building Web Applications', details: 'Java/Spring, C#/.NET Core, JavaScript (and yes, I still enjoy it)' },
+  { name: 'Cloud Native Solutions', details: 'Azure, AWS (where servers are just someone else\'s problem)' },
   { name: 'Modern Software Development', details: 'Clean code, Constant feedback, TDD, DevOps, CI/CD' },
-  { name: 'Caring about the Legacy', details: 'Appreciating, improving, and evolving existing systems' },
+  { name: 'Caring About the Legacy', details: 'Appreciating legacy code - someone\'s production is my treasure hunt' },
   { name: 'Pragmatic Agile Methodologies', details: 'Focus on principles instead of practices' },
   { name: 'Leveling Up the Team', details: 'Mentoring, knowledge sharing, pairing, code reviews' },
-  { name: 'AI in Software Development', details: 'Exploring and utilizing AI tools' }
+  { name: 'AI in Software Development', details: 'Using AI tools without letting them commit crimes against code quality' }
 ];
 
 // How I can help data
 export const howICanHelp = [
   {
-    name: 'Struggling with high maintenance costs or recurring bugs?',
+    name: 'Does your codebase feel like an archaeological dig? 🔍',
     details: 'Clean code, TDD, DevOps, CI/CD pipelines, automated testing',
     benefits: [
-      'Reduce long-term costs and improve maintainability.',
-      'Accelerate development with proven quality practices.',
-      'Minimize bugs and production incidents.',
-      'Build adaptable systems ready for future needs.'
+      'Reduce long-term costs and improve maintainability',
+      'Accelerate development with proven quality practices',
+      'Minimize bugs and production incidents (no more 3 AM alerts)',
+      'Build adaptable systems ready for future needs'
     ]
   },
   {
-    name: 'Are your AI coding tools not delivering the promised productivity gains?',
+    name: '🤖 Did AI promise you\'d never code again? (Spoiler: you still will)',
     details: 'Realistic AI capability assessment, code context documentation, process bottleneck identification, sustainable tool adoption',
     benefits: [
-      'Set realistic expectations about what AI can and cannot do in software development',
-      'Understand that AI excels at code generation but doesn\'t know the \'why\' behind business decisions',
-      'Identify real bottlenecks in your development process beyond coding speed',
-      'Establish practices for preserving business context that AI needs but cannot create',
-      'Recognize that AI amplifies existing patterns - fix processes before expecting magic',
-      'Use AI tools strategically where they add value, not as a universal solution'
+      'Set realistic expectations about what AI can and cannot do',
+      'Understand that AI excels at code, not business decisions',
+      'Identify real bottlenecks beyond coding speed',
+      'Establish practices for preserving business context that AI needs',
+      'Recognize that AI amplifies patterns - fix processes before expecting magic',
+      'Use AI tools strategically, not as digital snake oil'
     ]
   },
   {
-    name: 'Is legacy code slowing your team\'s progress?',
+    name: '🦖 Is your legacy system from the Jurassic period?',
     details: 'Iterative improvement, strategic refactoring, safe evolution of critical systems',
     benefits: [
-      'Lower technical debt without business disruption.',
-      'Extend the life and value of your legacy systems.',
-      'Introduce modern practices incrementally and safely.',
-      'Mitigate risk through step-by-step improvements.'
+      'Evolve your dinosaur without extinction events',
+      'Extend the life and value of your legacy systems',
+      'Introduce modern practices incrementally and safely',
+      'Mitigate risk through step-by-step improvements (no meteor impacts)'
     ]
   },
   {
-    name: 'Need seamless integration between old and new systems?',
+    name: 'Need to connect systems that refuse to talk to each other? 🔌',
     details: 'Designing seamless integrations between legacy and modern systems',
     benefits: [
-      'Unlock new capabilities by connecting your systems.',
-      'Enable robust data flows and efficient APIs.',
-      'Drive digital transformation while preserving investments.'
+      'Unlock new capabilities by connecting your systems',
+      'Enable robust data flows and efficient APIs',
+      'Drive digital transformation while preserving investments'
     ]
   },
   {
-    name: 'Not getting enough value or speed from your existing systems?',
+    name: 'Feeling like your features ship at the speed of continental drift? ⏳',
     details: 'Legacy system modernization, incremental improvement, value-driven development, prioritization',
     benefits: [
-      'Extract more business value without a full rewrite.',
-      'Boost development speed with targeted improvements.',
-      'Remove bottlenecks and prioritize high-impact features.',
-      'Increase focus and delivery speed by limiting work-in-progress.'
+      'Extract more business value without a full rewrite',
+      'Boost development speed with targeted improvements',
+      'Remove bottlenecks and prioritize high-impact features',
+      'Increase focus and delivery speed by limiting work-in-progress'
     ]
   },
   {
-    name: 'Does your developers struggle to understand your business needs?',
+    name: 'Do your developers speak Klingon while your business speaks English? 🖖',
     details: 'Aligning developers with business goals, domain-driven design, effective communication',
     benefits: [
       'Create software that directly reflects your business processes',
@@ -73,18 +79,18 @@ export const howICanHelp = [
     ]
   },
   {
-    name: 'Are your internal tools lagging behind your external systems?',
+    name: 'Are your internal tools stuck in 2005 while your customers live in 2026? 📟',
     details: 'Internal process automation, workflow optimization, employee experience',
     benefits: [
       'Reduce manual workload with streamlined internal tools',
       'Align internal and external systems for consistent experience',
-      'Reduce cross team friction with better internal processes',
+      'Reduce cross-team friction with better internal processes',
       'Improve employee productivity and satisfaction',
       'Create clear processes and automation for repetitive tasks'
     ]
   },
   {
-    name: 'Is your software built on outdated technology that\'s losing support?',
+    name: 'Is your tech stack held together with duct tape and prayers? 🙏',
     details: 'System rearchitecting, technology modernization, incremental migration strategies, version upgrades',
     benefits: [
       'Reduce risk through phased migration approach',
@@ -97,7 +103,7 @@ export const howICanHelp = [
     ]
   },
   {
-    name: 'Is your development team lacking direction or struggling with delivery?',
+    name: 'Is your team rowing in different directions (or not rowing at all)? 🚣',
     details: 'Project leadership, technical direction, scrum mastery, prioritization',
     benefits: [
       'Provide clear technical direction and project leadership',
@@ -109,7 +115,7 @@ export const howICanHelp = [
     ]
   },
   {
-    name: 'Is your infrastructure struggling to scale with growing demands?',
+    name: 'Is your infrastructure having a meltdown when traffic spikes? 📈',
     details: 'Azure, AWS, serverless architectures, scalable solutions',
     benefits: [
       'Design systems that scale with your business needs',
@@ -119,55 +125,55 @@ export const howICanHelp = [
     ]
   },
   {
-    name: 'Is your team overwhelmed with meetings and knowledge silos?',
+    name: 'Drowning in meetings while actual work happens never? 💬',
     details: 'Team collaboration, knowledge sharing, workflow optimization, prioritization techniques',
     benefits: [
       'Reduce meeting overload with more effective collaboration methods',
-      'Improve collaboration between developers and business stakeholders to ensure alignment',
-      'Right people are in the right meetings',
+      'Improve collaboration between developers and business stakeholders',
+      'Right people in the right meetings (novel concept, I know)',
       'Break down knowledge silos through systematic documentation and pair programming',
       'Implement prioritization frameworks to focus on high-value work',
       'Create sustainable workload management to prevent burnout',
-      'Improve team morale and productivity by fostering a culture of shared ownership'
+      'Improve team morale by fostering a culture of shared ownership'
     ]
   },
   {
-    name: 'Are manual tasks slowing down your team and creating inconsistencies?',
+    name: 'Still doing by hand what robots could do in milliseconds? 🤖',
     details: 'Process automation, workflow optimization, tooling improvements, AI integration',
     benefits: [
       'Eliminate human errors and inconsistencies in routine processes',
       'Free up team capacity for higher-value creative work',
-      'Use AI tools to automate tasks requiring human decision making in limited context',
+      'Use AI tools to automate tasks requiring human decisions in limited context',
       'Improve team satisfaction by removing tedious work'
     ]
   },
   {
-    name: 'Do you need new features but your legacy system cannot be changed?',
+    name: 'Your legacy system is untouchable but you need new features? 🔒',
     details: 'Seam-based architecture, data interception, non-invasive service integration, transparent feature implementation',
     benefits: [
       'Implement new features without modifying the core legacy system',
-      'Intercept data at system boundaries (database, messaging, APIs) to add functionality invisibly',
-      'Reduce risk by keeping the original system unaware of new service components',
-      'Enable gradual modernization while maintaining full business continuity',
+      'Intercept data at system boundaries to add functionality invisibly',
+      'Reduce risk by keeping the original system unaware of new components',
+      'Enable gradual modernization while maintaining business continuity',
       'Use modern technologies for new features while preserving legacy investments'
     ]
   },
   {
-    name: 'Is your team waiting for other teams to deliver before they can start?',
-    details: 'Cross-team collaboration, dependency management, prioritization, team topologies, and workflow optimization',
+    name: 'Is your team stuck in dependency hell? ⛓️',
+    details: 'Cross-team collaboration, dependency management, prioritization, team topologies, workflow optimization',
     benefits: [
       'Identify and manage dependencies to reduce bottlenecks',
       'Implement prioritization techniques to focus on high-value work',
       'Foster collaboration between teams to improve delivery speed',
-      'Teams own their own work and are not waiting for others to deliver',
+      'Teams own their own work and don\'t wait for others to deliver'
     ]
   },
   {
-    name: 'Is your backlog full of features that never get delivered?',
+    name: 'Is your backlog a graveyard of forgotten dreams? 💀',
     details: 'Backlog management, prioritization, user story mapping, value-driven development',
     benefits: [
       'Prioritize features that deliver real user value',
-      'Working with one or few high-impact items at a time',
+      'Work on one or few high-impact items at a time',
       'Predictable delivery of features that matter to users',
       'Implement user story mapping to visualize and prioritize work',
       'Reduce backlog clutter by focusing on high-impact items',
@@ -176,7 +182,7 @@ export const howICanHelp = [
     ]
   },
   {
-    name: 'Are your features always late and never meet expectations?',
+    name: 'Do your features arrive fashionably late (and half-baked)? ⏰',
     details: 'Iterative development, user story mapping, prioritization, value-driven development',
     benefits: [
       'Deliver features incrementally to gather feedback early',
@@ -190,14 +196,14 @@ export const howICanHelp = [
     ]
   },
   {
-    name: "Or are you just looking for extra hands on your project?",
+    name: "Or do you just need an extra pair of hands (and a brain)? 🙌",
     details: 'Short-term project support, team augmentation, specialized expertise',
     benefits: [
       'Quickly scale your team with experienced developer',
       'Bring in specialized skills for specific project needs',
       'Maintain project momentum with additional resources',
       'Increase certain mindset and skills in your team',
-      'Produce value from the first week',
+      'Produce value from the first week'
     ]
   }
 ];
@@ -637,6 +643,7 @@ export const manifesto = [
   { boldText: "People collaboration", regularText: "over siloed expertise" },
   { boldText: "Understanding root causes", regularText: "over treating symptoms" },
   { boldText: "Iterative evolution of legacy systems", regularText: "over immediate, high-risk rewrites" },
+  { boldText: "Working software", regularText: "over comprehensive documentation" },
 ];
 
 export const principles = [

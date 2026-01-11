@@ -1,6 +1,6 @@
 ---
 // src/components/Hero.astro
-import { location } from '../data/portfolioData.js';
+import { location, heroTagline } from '../data/portfolioData.js';
 
 export interface Props {
   socialMedia: {
@@ -18,22 +18,31 @@ const { socialMedia } = Astro.props;
     <div class="flex flex-col md:flex-row items-center">
 
       <div class="md:w-3/5 lg:w-3/5 text-center md:text-left mb-12 md:mb-0 md:pr-10 lg:pr-16">
-        <h1 class="text-2xl md:text-2xl font-bold mb-3 font-mono">
-          <span class="text-green-500">/* Modernizing legacy software, one clean commit at a time. */</span>
+        <h1 class="text-2xl md:text-2xl font-bold mb-3" style="font-family: var(--font-family-mono);">
+          <span class="text-code-green">{heroTagline.codeComment}</span>
         </h1>
-        <h2 class="text-4xl md:text-5xl font-bold mb-5">
+        <h2 class="text-4xl md:text-5xl font-bold mb-3" style="font-family: var(--font-family-mono);">
           <span class="text-purple-400">const</span> <span class="text-yellow-400">developer</span> = <span class="text-sky-300">"Marko Andersson"</span>;<span class="typing-cursor">|</span>
         </h2>
+        <p class="text-lg md:text-xl text-accent-lighter mb-5">
+          {heroTagline.subtitle}
+        </p>
 
       </div>
 
       <div class="md:w-2/5 lg:w-1/2 flex justify-center md:pl-10 lg:pl-0">
         <div class="relative">
-        <img
+          <!-- Detective badge overlay -->
+          <div class="absolute top-2 right-2 bg-detective-amber text-primary-dark px-2 py-1 rounded-full text-xs font-bold" style="font-family: var(--font-family-mono);">
+            <i class="fa-solid fa-id-badge mr-1"></i>
+            LEAD DETECTIVE
+          </div>
+          <img
+            id="sherlock-image"
             src="/images/sherlock-holmes.png" alt="Marko Andersson"
-            class="rounded-full w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 object-cover bg-primary-light border-0 shadow-xl"
-        />
-      </div>
+            class="rounded-full w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-80 lg:h-80 object-cover bg-primary-light border-0 shadow-xl cursor-pointer"
+          />
+        </div>
       </div>
 
     </div>
@@ -63,3 +72,20 @@ const { socialMedia } = Astro.props;
     </div>
   </div>
 </section>
+
+<!-- Elementary, my dear Watson -->
+<script>
+  // Click counter easter egg for Sherlock image
+  let clickCount = 0;
+  const sherlockImage = document.getElementById('sherlock-image');
+
+  if (sherlockImage) {
+    sherlockImage.addEventListener('click', () => {
+      clickCount++;
+      if (clickCount === 5) {
+        alert("🔍 Elementary! You've discovered my secret. DM me on LinkedIn for a code riddle.");
+        clickCount = 0;
+      }
+    });
+  }
+</script>

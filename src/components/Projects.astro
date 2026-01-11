@@ -34,9 +34,16 @@ const { title, projects } = Astro.props;
 <section id="projects" class="py-20 border-t border-primary-light">
   <h2 class="text-3xl font-bold text-center mb-12 text-accent-light">{title}</h2>
   <div class="space-y-12">
-    {projects.map(project => (
-        <div class="project-card bg-primary-medium p-6 rounded-lg shadow-lg">
-          <h3 class="text-2xl font-semibold mb-2 text-accent-light">{project.title}</h3>
+    {projects.map((project, index) => (
+        <div class="project-card bg-primary-medium p-6 rounded-lg shadow-lg border-l-4 border-transparent transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:border-detective-amber">
+          <!-- This component has 0 bugs (that I know of) -->
+          <div class="flex items-start justify-between mb-2">
+            <div class="flex-1">
+              <span class="text-detective-amber text-sm font-bold" style="font-family: var(--font-family-mono);">CASE #{String(index + 1).padStart(3, '0')}</span>
+              <h3 class="text-2xl font-semibold text-accent-light">{project.title}</h3>
+            </div>
+            <i class="fa-solid fa-folder-open text-2xl text-detective-amber opacity-30"></i>
+          </div>
           <div class="flex flex-wrap gap-x-4 gap-y-2 text-sm text-secondary mb-3">
             <span>{project.industry}</span>
             <span>|</span>
@@ -63,9 +70,9 @@ const { title, projects } = Astro.props;
                       ))}
                     </div>
                   </div>
-                  <button class="toggle-description flex items-center text-accent-light hover:text-accent-dark font-medium transition-colors duration-300 focus:outline-none mt-2">
-                    <span>Read more</span>
-                    <i class="fa-solid fa-chevron-down h-5 w-5 ml-1 transition-transform duration-300"></i>
+                  <button class="toggle-description flex items-center text-accent-light hover:text-detective-amber font-medium transition-colors duration-300 focus:outline-none mt-2">
+                    <span>Investigate case</span>
+                    <i class="fa-solid fa-magnifying-glass h-5 w-5 ml-1 animate-magnify"></i>
                   </button>
                 </>
               )}

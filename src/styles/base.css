@@ -12,7 +12,7 @@
 
 .typing-cursor {
   display: inline-block;
-  color: #6AE1FF;
+  color: var(--color-detective-amber);
   font-weight: bold;
   animation: blink 1s step-end infinite;
 }
@@ -45,6 +45,12 @@
 
   /* Accent colors */
   --color-purple: #9333EA; /* purple-600 */
+
+  /* Detective/playful accents */
+  --color-detective-amber: #FBBF24; /* amber-400 */
+  --color-code-green: #10B981; /* emerald-500 */
+  --color-mystery-purple: #A78BFA; /* violet-400 */
+  --color-warning-red: #EF4444; /* red-500 */
 }
 
 /* Custom utility classes using CSS variables */
@@ -98,6 +104,63 @@
   }
   .hide-scrollbar::-webkit-scrollbar {
     display: none;             /* Chrome, Safari and Opera */
+  }
+
+  /* Detective theme utilities */
+  .text-detective-amber {
+    color: var(--color-detective-amber);
+  }
+  .text-code-green {
+    color: var(--color-code-green);
+  }
+  .text-mystery-purple {
+    color: var(--color-mystery-purple);
+  }
+  .border-detective-amber {
+    border-color: var(--color-detective-amber);
+  }
+  .bg-detective-amber {
+    background-color: var(--color-detective-amber);
+  }
+
+  /* Glow effect for hover states */
+  .glow-on-hover {
+    transition: all 0.3s ease;
+  }
+  .glow-on-hover:hover {
+    box-shadow: 0 0 20px rgba(251, 191, 36, 0.4);
+  }
+
+  /* Magnifying glass animation */
+  @keyframes magnify {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+  }
+
+  .animate-magnify {
+    transition: transform 0.3s ease;
+  }
+  .animate-magnify:hover {
+    transform: scale(1.2);
+  }
+
+  /* Case file stamp effect */
+  .case-stamp {
+    position: relative;
+  }
+  .case-stamp::before {
+    content: "SOLVED";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--color-code-green);
+    border: 2px solid var(--color-code-green);
+    padding: 4px 8px;
+    transform: rotate(12deg);
+    opacity: 0.3;
+    font-weight: bold;
+    font-size: 0.75rem;
+    pointer-events: none;
   }
 }
 

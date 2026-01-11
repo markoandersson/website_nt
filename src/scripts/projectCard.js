@@ -17,9 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
       if (!isExpanded) {
         description.style.maxHeight = description.scrollHeight + 'px';
         description.style.opacity = '1';
-        buttonText.textContent = 'Read less';
-        icon.classList.add('fa-rotate-180');
-        
+        buttonText.textContent = 'Close case';
+
         // Send analytics event when expanding
         sendAnalyticsEvent('project_expanded', {
           project_title: projectTitle,
@@ -28,8 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
       } else {
         description.style.maxHeight = '0';
         description.style.opacity = '0';
-        buttonText.textContent = 'Read more';
-        icon.classList.remove('fa-rotate-180');
+        buttonText.textContent = 'Investigate case';
       }
     });
   });
