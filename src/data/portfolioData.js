@@ -206,7 +206,7 @@ export const howICanHelp = [
 export const projects = [
   {
     title: 'Digital Media Platform Modernization',
-    duration: 3,
+    duration: 4,
     industry: 'Media',
     role: 'Lead/Senior Developer',
     tech: ['C#', '.NET Core', 'Azure', 'JavaScript', 'SQL Server'],
@@ -466,7 +466,6 @@ export const projects = [
   },
 ];
 
-export const booksRead = 80
 
 // Books that have influenced me
 export const books = [
