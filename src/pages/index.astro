@@ -9,24 +9,25 @@ import Hero from '../components/Hero.astro';
 import Footer from '../components/Footer.astro';
 import Manifesto from '../components/Manifesto.astro';
 import HowICanHelp from '../components/HowICanHelp.astro';
-import { 
-  keyExpertise, 
+import {
+  keyExpertise,
   howICanHelp,
-  projects, 
+  projects,
   books,
-  socialMedia, 
+  socialMedia,
   testimonials,
-  booksRead,
   manifesto,
   principles,
   calculateYearsExperience,
-  getAmountOfProjects,
-  getTechnologies 
+  getIndustriesCount,
+  getTestimonialsCount,
+  getTechnologies
 } from '../data/portfolioData.js';
 
 // Calculate dynamic values
 const yearsExperience = calculateYearsExperience();
-const amountOfProjects = getAmountOfProjects();
+const industriesServed = getIndustriesCount();
+const clientTestimonials = getTestimonialsCount();
 const technologies = getTechnologies();
 
 ---
@@ -45,12 +46,12 @@ const technologies = getTechnologies();
 
     <main class="container mx-auto px-6 py-12">
 
-      <AboutMe 
+      <AboutMe
         title="About Me & Expertise"
         keyExpertise={keyExpertise}
         yearsExperience={yearsExperience}
-        booksRead={booksRead}
-        amountOfProjects={amountOfProjects}
+        industriesServed={industriesServed}
+        clientTestimonials={clientTestimonials}
       />
 
       <HowICanHelp 

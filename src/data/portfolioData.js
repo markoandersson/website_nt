@@ -207,7 +207,7 @@ export const projects = [
   {
     title: 'Digital Media Platform Modernization',
     duration: 3,
-    client: 'Media company',
+    industry: 'Media',
     role: 'Lead/Senior Developer',
     tech: ['C#', '.NET Core', 'Azure', 'JavaScript', 'SQL Server'],
     teamSize: 10,
@@ -241,7 +241,7 @@ export const projects = [
   {
     title: 'Product Lifecycle Management System',
     duration: 1,
-    client: 'Multinational electric engineering company',
+    industry: 'Industry',
     role: 'Lead Developer & Mentor',
     tech: ['Java', 'Spring', 'Azure', 'Azure SQL'],
     teamSize: 4,
@@ -267,7 +267,7 @@ export const projects = [
   {
     title: 'High Security Government Project',
     duration: 0.5,
-    client: 'Finnish government',
+    industry: 'Government',
     role: 'Senior Developer',
     tech: ['Java', 'Spring', 'Python'],
     teamSize: 5,
@@ -281,7 +281,7 @@ export const projects = [
   {
     title: 'Sharepoint Application Modernization',
     duration: 1,
-    client: 'Multinational electric engineering company',
+    industry: 'Industry',
     role: 'Lead Developer',
     tech: ['C#', '.NET Core', 'React', 'Azure,', 'Sharepoint'],
     teamSize: 3,
@@ -306,7 +306,7 @@ export const projects = [
   {
     title: 'Order Tracking System',
     duration: 2.5,
-    client: 'Multinational electric engineering company',
+    industry: 'Industry',
     role: 'Lead Developer & Scrum Master',
     tech: ['Java', 'Spring', 'Azure', 'Azure SQL'],
     teamSize: 3,
@@ -334,7 +334,7 @@ export const projects = [
   {
     title: 'PIM to Webshop Integration',
     duration: 0.5,
-    client: 'Finnish retail company',
+    industry: 'Retail',
     role: 'Senior Developer',
     tech: ['JavaScript', 'AWS Lambda', 'Node.js', 'AWS'],
     teamSize: 9,
@@ -356,7 +356,7 @@ export const projects = [
   {
     title: 'Transportation Management System',
     duration: 3.5,
-    client: 'Technology and services company',
+    industry: 'Logistics',
     role: 'Senior Developer',
     tech: ['Java', 'Spring', 'JavaScript', 'SQL Server', 'Azure'],
     teamSize: 8,
@@ -381,7 +381,7 @@ export const projects = [
   {
     title: 'Multiplayer Game Communication Servers',
     duration: 2.5,
-    client: 'Finnish game studio',
+    industry: 'Gaming',
     role: 'Senior Developer',
     tech: ['Java','Spring', 'JMS', 'Cassandra', 'Vaadin', 'REST'],
     teamSize: 3,
@@ -413,7 +413,7 @@ export const projects = [
   {
     title: 'Test Data Generation Utility',
     duration: 1.25,
-    client: 'Energy meter manufacturer',
+    industry: 'Energy',
     role: 'Development Consultant',
     tech: ['SQL'],
     teamSize: 1,
@@ -440,7 +440,7 @@ export const projects = [
   {
     title: 'Certificate Management System',
     duration: 4.5,
-    client: 'Nordic telecom company',
+    industry: 'Telecommunications',
     role: 'Software Developer',
     tech: ['Java', 'Spring', 'Microsoft Active Directory'],
     teamSize: 4,
@@ -661,7 +661,14 @@ export const principles = [
 
 // Helper functions to calculate derived data
 export const calculateYearsExperience = () => new Date().getFullYear() - careerStartYear;
-export const getAmountOfProjects = () => projects.length;
+
+// Extract unique industries from projects
+export const getIndustries = () => {
+  return [...new Set(projects.map(project => project.industry))].sort();
+};
+
+export const getIndustriesCount = () => getIndustries().length;
+export const getTestimonialsCount = () => testimonials.length;
 
 // Technology to icon mapping
 const technologyIcons = {
