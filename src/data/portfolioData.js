@@ -1,7 +1,7 @@
 // Hero tagline and subtitle
 export const heroTagline = {
   codeComment: "// TODO: Refactor the world, one legacy system at a time",
-  subtitle: "Bug detective 🔍 • Legacy whisperer • Code archaeologist"
+  subtitle: "Bug detective • Legacy whisperer • Code archaeologist"
 };
 
 // Key expertise areas

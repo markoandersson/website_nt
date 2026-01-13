@@ -3,6 +3,8 @@
 # Start the Astro dev server and open Chrome
 # This script starts the development server and automatically opens the site in Chrome
 
+DEV_URL="http://localhost:4321"
+
 echo "Starting Astro development server..."
 
 # Start the dev server in the background
@@ -15,7 +17,7 @@ max_attempts=30
 attempt=0
 
 while [ $attempt -lt $max_attempts ]; do
-  if curl -s http://localhost:4322 > /dev/null 2>&1; then
+  if curl -s "$DEV_URL" > /dev/null 2>&1; then
     echo "Server is ready!"
     break
   fi
@@ -33,19 +35,19 @@ fi
 echo "Opening Chrome..."
 if command -v open > /dev/null 2>&1; then
   # macOS
-  open -a "Google Chrome" http://localhost:4322
+  open "$DEV_URL"
 elif command -v google-chrome > /dev/null 2>&1; then
   # Linux with google-chrome
-  google-chrome http://localhost:4322 &
+  google-chrome "$DEV_URL" &
 elif command -v chrome > /dev/null 2>&1; then
   # Linux with chrome
-  chrome http://localhost:4322 &
+  chrome "$DEV_URL" &
 else
-  echo "Chrome not found. Please open http://localhost:4322 manually"
+  echo "Chrome not found. Please open $DEV_URL manually"
 fi
 
 echo ""
-echo "Development server is running at http://localhost:4322"
+echo "Development server is running at $DEV_URL"
 echo "Press Ctrl+C to stop the server"
 echo ""
 
