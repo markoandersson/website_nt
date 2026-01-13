@@ -9,6 +9,7 @@ export interface Props {
     teamSize: number;
     role: string;
     tech: string[];
+    highlights?: string[];
     description: string | string[];
   }>;
 }
@@ -58,27 +59,46 @@ const { title, projects } = Astro.props;
                 <span class="bg-primary-light text-light text-xs font-semibold px-2.5 py-0.5 rounded">{t}</span>
             ))}
           </div>
+          {project.highlights && project.highlights.length > 0 && (
+            <div class="mb-4">
+              <h4 class="text-detective-amber text-sm font-bold mb-2 flex items-center">
+                <i class="fa-solid fa-clipboard-list mr-2"></i>
+                CASE SUMMARY:
+              </h4>
+              <ul class="space-y-1.5">
+                {project.highlights.map(highlight => (
+                  <li class="flex items-start text-light text-sm leading-relaxed">
+                    <i class="fa-solid fa-check text-detective-amber mr-2 mt-1 flex-shrink-0"></i>
+                    <span>{highlight}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
           {Array.isArray(project.description) ? (
             <>
-              <p class="text-light leading-relaxed mb-4">{project.description[0]}</p>
-              {project.description.length > 1 && (
-                <>
-                  <div class="full-description overflow-hidden transition-all duration-500 ease-in-out" style="max-height: 0; opacity: 0;">
-                    <div class="pt-2">
-                      {project.description.slice(1).map((paragraph) => (
-                        <p class="text-light leading-relaxed mb-4">{paragraph}</p>
-                      ))}
-                    </div>
-                  </div>
-                  <button class="toggle-description flex items-center text-accent-light hover:text-detective-amber font-medium transition-colors duration-300 focus:outline-none mt-2">
-                    <span>Investigate case</span>
-                    <i class="fa-solid fa-magnifying-glass h-5 w-5 ml-1 animate-magnify"></i>
-                  </button>
-                </>
-              )}
+              <div class="full-description overflow-hidden transition-all duration-500 ease-in-out" style="max-height: 0; opacity: 0;">
+                <div class="pt-2">
+                  {project.description.map((paragraph) => (
+                    <p class="text-light leading-relaxed mb-4">{paragraph}</p>
+                  ))}
+                </div>
+              </div>
+              <button class="toggle-description flex items-center text-accent-light hover:text-detective-amber font-medium transition-colors duration-300 focus:outline-none mt-2">
+                <span>Investigate case</span>
+                <i class="fa-solid fa-magnifying-glass h-5 w-5 ml-1 animate-magnify"></i>
+              </button>
             </>
           ) : (
-            <p class="text-light leading-relaxed">{project.description}</p>
+            <>
+              <div class="full-description overflow-hidden transition-all duration-500 ease-in-out" style="max-height: 0; opacity: 0;">
+                <p class="text-light leading-relaxed mb-4">{project.description}</p>
+              </div>
+              <button class="toggle-description flex items-center text-accent-light hover:text-detective-amber font-medium transition-colors duration-300 focus:outline-none mt-2">
+                <span>Investigate case</span>
+                <i class="fa-solid fa-magnifying-glass h-5 w-5 ml-1 animate-magnify"></i>
+              </button>
+            </>
           )}
         </div>
     ))}

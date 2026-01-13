@@ -217,6 +217,12 @@ export const projects = [
     role: 'Lead/Senior Developer',
     tech: ['C#', '.NET Core', 'Azure', 'JavaScript', 'SQL Server'],
     teamSize: 10,
+    highlights: [
+      'Established automated CI/CD pipelines reducing manual deployment overhead',
+      'Designed integration layer between legacy database and SaaS platform',
+      'Created test harnesses enabling confident development in shared database environment',
+      'Incrementally migrated SQL procedures to EF Core maintaining uptime'
+    ],
    description: [
       `As a senior developer, I contributed to modernizing a legacy self-service platform in the media industry. I implemented CI/CD pipelines and 
       helped establish domain-aligned architecture principles. My role included designing and implementing integration between the legacy database
@@ -251,6 +257,12 @@ export const projects = [
     role: 'Lead Developer & Mentor',
     tech: ['Java', 'Spring', 'Azure', 'Azure SQL'],
     teamSize: 4,
+    highlights: [
+      'Developed complete product lifecycle management system with BOM management',
+      'Created mobile client enabling field technicians to document investigations',
+      'Designed web UI streamlining review and approval workflows',
+      'Mentored junior developers establishing coding standards and best practices'
+    ],
     description: [
       `Developed a product lifecycle management system that streamlined the entire process of product changes, 
       including Bill of Materials (BOM) management and structured review workflows. Created a Java/Spring backend 
@@ -277,6 +289,11 @@ export const projects = [
     role: 'Senior Developer',
     tech: ['Java', 'Spring', 'Python'],
     teamSize: 5,
+    highlights: [
+      'Enhanced integrations with various government systems and third-party platforms',
+      'Established effective customer demo workflow improving feedback cycles',
+      'Improved feature design using UI sketches and mocking with stakeholders'
+    ],
     description: [
       `Enhanced a high-security system for the Finnish government that involved complex integrations with various 
       government systems and third-party platforms. Established a more effective workflow for demoing the software 
@@ -291,6 +308,12 @@ export const projects = [
     role: 'Lead Developer',
     tech: ['C#', '.NET Core', 'React', 'Azure,', 'Sharepoint'],
     teamSize: 3,
+    highlights: [
+      'Led modernization replacing legacy SharePoint views with React components',
+      'Designed clean architecture separating frontend and backend concerns',
+      'Established automated testing ensuring feature parity with legacy system',
+      'Delivered incremental value through careful migration analysis'
+    ],
     description: [
       `Led the successful modernization of a legacy Sharepoint application by reimplementing outdated views with modern 
       React components while porting selected C# code to .NET Core. This transformation improved user experience, 
@@ -316,6 +339,12 @@ export const projects = [
     role: 'Lead Developer & Scrum Master',
     tech: ['Java', 'Spring', 'Azure', 'Azure SQL'],
     teamSize: 3,
+    highlights: [
+      'Led end-to-end development from sales to delivery with worldwide usage',
+      'Created integration layer enabling external access to legacy order system',
+      'Implemented weekly customer demos in test environment building high trust',
+      'Established DevOps practices enabling frequent reliable deployments'
+    ],
     description: [
       `Led the end-to-end development of a cloud-native order tracking system with worldwide usage, from initial sales 
       and requirements gathering to final delivery. The system allowed customers to track orders in real-time and receive 
@@ -344,6 +373,11 @@ export const projects = [
     role: 'Senior Developer',
     tech: ['JavaScript', 'AWS Lambda', 'Node.js', 'AWS'],
     teamSize: 9,
+    highlights: [
+      'Implemented serverless integration between legacy PIM and modern webshop',
+      'Created data transformation services with optimized caching strategies',
+      'Established monitoring and alerting ensuring production reliability'
+    ],
     description: [
       `Helped to implement a serverless, cloud-native integration between a legacy Product Information Management (PIM) 
       system and a new webshop frontend using JavaScript and AWS Lambda. Created robust data transformation services that 
@@ -366,6 +400,12 @@ export const projects = [
     role: 'Senior Developer',
     tech: ['Java', 'Spring', 'JavaScript', 'SQL Server', 'Azure'],
     teamSize: 8,
+    highlights: [
+      'Established API specifications coordinating development between two companies',
+      'Implemented highly praised features improving user experience significantly',
+      'Applied TDD and clean code practices ensuring maintainable solutions',
+      'Participated in planning system simplification to reduce complexity'
+    ],
     description: [
       `Participated in the development and improvement of established transportation management system. Successfully established API 
       specifications and coordinated 
@@ -391,6 +431,12 @@ export const projects = [
     role: 'Senior Developer',
     tech: ['Java','Spring', 'JMS', 'Cassandra', 'Vaadin', 'REST'],
     teamSize: 3,
+    highlights: [
+      'Architected pioneering real-time communication servers before Unity/cloud services',
+      'Created CMS enabling game developers to manage data across environments',
+      'Designed JMS-based messaging and monitoring maintaining 99.9% uptime',
+      'Introduced strong testing practices significantly improving code quality'
+    ],
     description: [
       `Participated architecting and building pioneering high-performance communication servers for multiplayer mobile games that enabled 
       real-time interaction between game clients. This custom solution, developed before such functionality 
@@ -423,6 +469,11 @@ export const projects = [
     role: 'Development Consultant',
     tech: ['SQL'],
     teamSize: 1,
+    highlights: [
+      'Developed test data framework significantly reducing test setup time',
+      'Created flexible configuration system democratizing testing for non-technical users',
+      'Delivered exceptional value as first consultant leading to expanded engagement'
+    ],
     description: [
       `Developed a sophisticated test data generation framework for energy meter systems that significantly reduced 
       test setup time and improved test coverage by simulating diverse energy consumption patterns, meter readings, 
@@ -450,6 +501,12 @@ export const projects = [
     role: 'Software Developer',
     tech: ['Java', 'Spring', 'Microsoft Active Directory'],
     teamSize: 4,
+    highlights: [
+      'Developed secure certificate management system simplifying complex PKI operations',
+      'Implemented complete CA certificate lifecycle with Active Directory integration',
+      'Created intuitive interfaces making certificate management accessible',
+      'Established comprehensive audit logging ensuring security compliance'
+    ],
     description: [
       `Participated of developing a secure certificate management system for a Finnish telecom company that simplified 
       complex PKI operations while maintaining security standards. The system handled the complete lifecycle 
