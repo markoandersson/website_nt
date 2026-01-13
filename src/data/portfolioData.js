@@ -218,10 +218,11 @@ export const projects = [
     tech: ['C#', '.NET Core', 'Azure', 'JavaScript', 'SQL Server'],
     teamSize: 10,
     highlights: [
-      'Established automated CI/CD pipelines reducing manual deployment overhead',
       'Designed integration layer between legacy database and SaaS platform',
+      'Incrementally migrated SQL procedures to C# maintaining production uptime',
       'Created test harnesses enabling confident development in shared database environment',
-      'Incrementally migrated SQL procedures to EF Core maintaining uptime'
+      'Leveraged AI to develop troubleshooting scripts analyzing integration layer data',
+      'Established automated CI/CD pipelines reducing manual deployment overhead'
     ],
    description: [
       `As a senior developer, I contributed to modernizing a legacy self-service platform in the media industry. I implemented CI/CD pipelines and 
@@ -244,6 +245,12 @@ export const projects = [
       work areas, ensuring continuous delivery of business value despite the challenges of a large-scale rewrite.
       This project demonstrates my commitment to creating sustainable value through quality engineering practices,
       even when working within constraints of broader project decisions.`,
+
+      `I leveraged modern agentic AI tools to develop various scripts and small utilities for investigating and
+      troubleshooting issues with the live system. These tools analyzed data sent and received through the integration
+      layer I had built, enabling rapid diagnosis of production issues. The evolution of AI-powered development tools
+      has significantly accelerated the creation of such specialized troubleshooting utilities, allowing developers to
+      quickly build focused tools that would have previously required substantial manual development effort.`,
 
       `I iteratively reimplemented old stored procedure logic as C# code by incrementally moving the SQL to the C# project
       and then refactoring it to EF Core queries and C# logic, all while maintaining the working system. The partial rewrite
